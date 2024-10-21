@@ -97,7 +97,7 @@ Function Page Load
 
     gsap.to ($ ('#header-container'), {
       duration: 0.5,
-      opacity: 0.5,
+      opacity: 1,
       delay: 0.2,
       ease: Power2.easeOut,
     });
@@ -1821,7 +1821,7 @@ Function Showcase Carousel
                   duration: 0.2,
                   borderWidth: '2px',
                   scale: 1,
-                  borderColor: '#222',
+                  borderColor: '#000',
                   backgroundColor: 'transparent',
                 });
               }
@@ -2017,7 +2017,7 @@ Function Showcase Carousel
         if ($ (this).hasClass ('change-header')) {
           gsap.to ($ ('.slide-title'), {
             duration: 1.5,
-            color: '#222',
+            color: '#000',
             delay: 0.3,
             ease: Power4.easeInOut,
           });
@@ -2061,7 +2061,7 @@ Function Showcase Carousel
           if (trigger_item.hasClass ('change-header')) {
             gsap.to ($ ('.slide-title'), {
               duration: 1.5,
-              color: '#222',
+              color: '#000',
               ease: Power4.easeInOut,
             });
           }
@@ -2408,7 +2408,7 @@ Function Showcase Slider
                   duration: 0.2,
                   borderWidth: '2px',
                   scale: 1,
-                  borderColor: '#222',
+                  borderColor: '#000',
                   backgroundColor: 'transparent',
                 });
               }
@@ -2507,7 +2507,7 @@ Function Showcase Slider
         if ($ (this).hasClass ('change-header')) {
           gsap.to ($ ('.slide-title'), {
             duration: 1.5,
-            color: '#222',
+            color: '#000',
             delay: 0.3,
             ease: Power4.easeInOut,
           });
@@ -2544,7 +2544,7 @@ Function Showcase Slider
           if (trigger_item.hasClass ('change-header')) {
             gsap.to ($ ('.slide-title'), {
               duration: 1.5,
-              color: '#222',
+              color: '#000',
               ease: Power4.easeInOut,
             });
           }
@@ -3294,7 +3294,7 @@ Function Showcase Lists
                   duration: 0.2,
                   borderWidth: '2px',
                   scale: 1,
-                  borderColor: '#222',
+                  borderColor: '#000',
                   backgroundColor: 'transparent',
                 });
               }
@@ -4487,7 +4487,7 @@ Function Showcase Gallery
                   duration: 0.2,
                   borderWidth: '2px',
                   scale: 1,
-                  borderColor: '#222',
+                  borderColor: '#000',
                   backgroundColor: 'transparent',
                 });
               }

@@ -213,12 +213,12 @@ Function Scroll Effects
 
     if ($ ('body').hasClass ('swap-logo')) {
       var imgLogoWhite = document.querySelector ('.white-logo');
-      var originalSrcWhite = 'images/logo-white.png';
-      var updatedSrcWhite = 'images/logo-white-symbol.png';
+      var originalSrcWhite = '../img/logo-min_w.svg';
+      var updatedSrcWhite = '../img/logo-min_w.svg';
 
       var imgLogoBlack = document.querySelector ('.black-logo');
-      var originalSrcBlack = 'images/logo.png';
-      var updatedSrcBlack = 'images/logo-symbol.png';
+      var originalSrcBlack = '../img/logo.svg';
+      var updatedSrcBlack = '../img/logo.svg';
 
       // Create a scroll trigger
 
@@ -1531,7 +1531,7 @@ Function Scroll Effects
       });
 
       var nextAllWorks = gsap.to ('.all-works', {
-        opacity: 0,
+        opacity: 1,
         ease: Linear.easeNone,
         scrollTrigger: {
           trigger: '#project-nav',

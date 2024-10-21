@@ -1362,7 +1362,7 @@ a.link:hover::before {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	background-image: url("../images/clients-middle.png");
+	background-image: url("../img/assets/clients-middle.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
@@ -1370,11 +1370,11 @@ a.link:hover::before {
 
 .light-content .clients-table,
 .dark-section .clients-table {
-	background-image: url("../images/clients-middle-white.png");
+	background-image: url("../img/assets/clients-middle-white.png");
 }
 
 .light-content .light-section .clients-table {
-	background-image: url("../images/clients-middle.png");
+	background-image: url("../img/assets/clients-middle.png");
 }
 
 .clients-table::before {
@@ -1384,7 +1384,7 @@ a.link:hover::before {
 	height: 20px;
 	top: 0;
 	left: 0;
-	background-image: url("../images/clients-top.png");
+	background-image: url("../img/assets/clients-top.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
@@ -1392,11 +1392,11 @@ a.link:hover::before {
 
 .light-content .clients-table::before,
 .dark-section .clients-table::before {
-	background-image: url("../images/clients-top-white.png");
+	background-image: url("../img/assets/clients-top-white.png");
 }
 
 .light-content .light-section .clients-table::before {
-	background-image: url("../images/clients-top.png");
+	background-image: url("../img/assets/clients-top.png");
 }
 
 .clients-table::after {
@@ -1406,7 +1406,7 @@ a.link:hover::before {
 	height: 20px;
 	bottom: 0;
 	left: 0;
-	background-image: url("../images/clients-bottom.png");
+	background-image: url("../img/assets/clients-bottom.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
@@ -1414,11 +1414,11 @@ a.link:hover::before {
 
 .light-content .clients-table::after,
 .dark-section .clients-table::after {
-	background-image: url("../images/clients-bottom-white.png");
+	background-image: url("../img/assets/clients-bottom-white.png");
 }
 
 .light-content .light-section .clients-table::after {
-	background-image: url("../images/clients-bottom.png");
+	background-image: url("../img/assets/clients-bottom.png");
 }
 
 .clients-table li {

@@ -1538,6 +1538,7 @@ body.header-visible #main.project-detail.detail-project #hero-bg-image {
 
 #project-nav .next-project-caption {
     padding: 0;
+    z-index: 111111;
 }
 
 #project-nav .next-hero-subtitle span {
@@ -1759,6 +1760,7 @@ body.header-visible #main.project-detail.detail-project #hero-bg-image {
 
 .all-works {
     top: 70px;
+    z-index: 111111;
 }
 
 /* skinpro slider end */
