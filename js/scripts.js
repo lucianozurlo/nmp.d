@@ -97,7 +97,7 @@ Function Page Load
 
     gsap.to ($ ('#header-container'), {
       duration: 0.5,
-      opacity: 1,
+      opacity: 0.5,
       delay: 0.2,
       ease: Power2.easeOut,
     });
