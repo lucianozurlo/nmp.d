@@ -264,7 +264,7 @@ abbr[title] {
 b,
 strong {
 	font-weight: 600;
-	color: #000;
+	color: #222;
 }
 
 .light-content b,
@@ -278,7 +278,7 @@ strong {
 .light-content .light-section b,
 .light-content .light-section strong {
 	font-weight: 600;
-	color: #000;
+	color: #222;
 }
 
 cite,
@@ -290,7 +290,7 @@ i {
 
 mark,
 ins {
-	background: none repeat scroll 0 0 #000;
+	background: none repeat scroll 0 0 #222;
 	text-decoration: none;
 	color: #fff;
 	padding: 2px 8px;
@@ -303,7 +303,7 @@ ins {
 .dark-section mark,
 .dark-section ins {
 	background: none repeat scroll 0 0 #fff;
-	color: #000;
+	color: #222;
 }
 
 .light-content .light-section mark,
@@ -349,7 +349,7 @@ pre {
 
 .light-content .light-section pre {
 	background-color: rgba(0, 0, 0, 0.05);
-	color: #000;
+	color: #222;
 }
 
 blockquote,
@@ -370,7 +370,7 @@ q:after {
 }
 
 blockquote {
-	color: #000;
+	color: #222;
 	line-height: 1.6;
 	font-size: 1.5rem;
 	margin-bottom: 2.1875rem;
@@ -386,7 +386,7 @@ blockquote {
 }
 
 .light-content .light-section blockquote {
-	color: #000;
+	color: #222;
 }
 
 blockquote::before {
@@ -628,7 +628,7 @@ thead tr,
 
 .light-content thead tr,
 .dark-section thead tr {
-	color: #000;
+	color: #222;
 }
 
 tr,
@@ -723,13 +723,13 @@ hr:after {
 }
 
 ::selection {
-	background: #000;
+	background: #222;
 	color: #fff;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: #000;
+	background: #222;
 	color: #fff;
 	text-shadow: none;
 }
@@ -747,7 +747,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #000;
+	color: #222;
 	margin-bottom: 20px;
 }
 
@@ -843,7 +843,7 @@ h6.has-icon::before {
 .light-content .light-section h4,
 .light-content .light-section h5,
 .light-content .light-section h6 {
-	color: #000;
+	color: #222;
 }
 
 p {
@@ -889,13 +889,13 @@ p {
 a:hover,
 a:active {
 	outline: 0;
-	color: #000;
+	color: #222;
 }
 
 a,
 .light-content .light-section a {
 	text-decoration: none;
-	color: #000;
+	color: #222;
 	outline: 0;
 }
 
@@ -906,7 +906,7 @@ a,
 }
 
 .light-content .white-header a {
-	color: #000;
+	color: #222;
 }
 
 a:hover {
@@ -1103,7 +1103,7 @@ a:hover {
 }
 
 i.arrow-icon {
-	border: solid #000;
+	border: solid #222;
 	border-width: 0px 3px 3px 0px;
 	box-sizing: border-box;
 	display: block;
@@ -1122,7 +1122,7 @@ i.arrow-icon {
 
 .light-content .change-header i.arrow-icon,
 .dark-content .change-header i.arrow-icon {
-	border: solid #000;
+	border: solid #222;
 	border-width: 0px 3px 3px 0px;
 }
 
@@ -1133,7 +1133,7 @@ i.arrow-icon::after {
 	height: 3px;
 	top: 7px;
 	left: -6px;
-	background-color: #000;
+	background-color: #222;
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 }
@@ -1146,7 +1146,7 @@ i.arrow-icon::after {
 
 .light-content .change-header i.arrow-icon::after,
 .dark-content .change-header i.arrow-icon::after {
-	background-color: #000;
+	background-color: #222;
 }
 
 i.arrow-icon-down {
@@ -1371,7 +1371,7 @@ i.arrow-icon-up::after {
 	position: absolute;
 	left: -37px;
 	top: 30px;
-	color: #000;
+	color: #222;
 	opacity: 0;
 	transform: translateX(-20px);
 	-webkit-transform: translateX(-20px);
@@ -1394,7 +1394,7 @@ i.arrow-icon-up::after {
 	right: -40px;
 	left: auto;
 	top: 30px;
-	color: #000;
+	color: #222;
 	opacity: 0;
 	transform: translateX(20px);
 	-webkit-transform: translateX(20px);
@@ -1413,7 +1413,7 @@ i.arrow-icon-up::after {
 
 .drag-cursor-black #ball-drag-x:before,
 .drag-cursor-black #ball-drag-x:after {
-	color: #000;
+	color: #222;
 }
 
 .scale-drag-x #ball-drag-x:before {
@@ -1455,7 +1455,7 @@ i.arrow-icon-up::after {
 	position: absolute;
 	left: 32px;
 	top: -40px;
-	color: #000;
+	color: #222;
 	opacity: 0;
 	transform: translateY(-20px);
 	-webkit-transform: translateY(-20px);
@@ -1477,7 +1477,7 @@ i.arrow-icon-up::after {
 	position: absolute;
 	left: 32px;
 	top: 100px;
-	color: #000;
+	color: #222;
 	opacity: 0;
 	transform: translateY(20px);
 	-webkit-transform: translateY(20px);
@@ -1586,11 +1586,11 @@ i.arrow-icon-up::after {
 
 .drag-cursor-black #ball i,
 .drag-cursor-black #ball.with-icon i {
-	color: #000;
+	color: #222;
 }
 
 .light-content #ball.with-icon.dark-icon i {
-	color: #000;
+	color: #222;
 }
 
 .scale-up #ball i {
@@ -1734,7 +1734,7 @@ scale-up .link,
 	position: fixed;
 	top: 0;
 	bottom: 0;
-	background: #000;
+	background: #222;
 	z-index: 1800;
 	text-align: center;
 }
@@ -1753,7 +1753,7 @@ scale-up .link,
 	position: relative;
 	display: block;
 	text-align: center;
-	background-color: #000;
+	background-color: #222;
 	float: left;
 	width: 9vw;
 	overflow: hidden;
@@ -2176,7 +2176,7 @@ nav.open {
 		left: 15px;
 		top: 60px;
 		padding-top: 20px;
-		background: #000;
+		background: #222;
 		border-radius: 3px;
 		-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s ease-in-out !important;
 		transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s ease-in-out !important;
@@ -2202,7 +2202,7 @@ nav.open {
 		height: 0;
 		border-style: solid;
 		border-width: 0 10px 9px;
-		border-color: transparent transparent #000;
+		border-color: transparent transparent #222;
 	}
 
 	.classic-menu .flexnav li:last-child ul:after {
@@ -2220,7 +2220,7 @@ nav.open {
 		height: 0;
 		border-style: solid;
 		border-width: 0 10px 9px;
-		border-color: transparent transparent #000;
+		border-color: transparent transparent #222;
 		-webkit-transform: rotate(-90deg);
 		transform: rotate(-90deg);
 	}
@@ -2246,11 +2246,11 @@ nav.open {
 	}
 
 	.classic-menu .flexnav ul li ul li a {
-		background: #000;
+		background: #222;
 	}
 
 	.classic-menu .flexnav ul li ul li ul li a {
-		background: #000;
+		background: #222;
 	}
 
 	.classic-menu .flexnav li ul.flexnav-show {
@@ -2562,7 +2562,7 @@ nav.open {
 	height: 5px;
 	width: 5px;
 	border-radius: 5px;
-	background-color: #000;
+	background-color: #222;
 	opacity: 1;
 	top: 8px;
 	left: 0;
@@ -2649,7 +2649,7 @@ nav.open {
 	width: 100%;
 	opacity: 1;
 	right: 0;
-	background-color: #000;
+	background-color: #222;
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
 	-o-transform: rotate(0deg);
@@ -2695,7 +2695,7 @@ nav.open {
 }
 
 .light-content .white-header #menu-burger span {
-	background-color: #000;
+	background-color: #222;
 }
 
 .light-content .white-header.over-white-section #menu-burger span,
@@ -2704,7 +2704,7 @@ nav.open {
 }
 
 .dark-content-header #menu-burger span {
-	background-color: #000 !important;
+	background-color: #222 !important;
 }
 
 .light-content-header #menu-burger span {
@@ -2712,7 +2712,7 @@ nav.open {
 }
 
 .dark-content-header .button-text {
-	color: #000 !important;
+	color: #222 !important;
 }
 
 .light-content-header .button-text {
@@ -2809,7 +2809,7 @@ footer.showcase-footer {
 	font-size: 14px;
 	line-height: 30px;
 	font-weight: 500;
-	color: #000;
+	color: #222;
 	pointer-events: initial;
 	display: table;
 	width: auto;
@@ -2827,7 +2827,7 @@ footer.showcase-footer {
 .socials-wrap {
 	position: relative;
 	float: right;
-	color: #000;
+	color: #222;
 	width: 240px;
 	height: 160px;
 	box-sizing: border-box;
@@ -2976,7 +2976,7 @@ footer .socials-wrap {
 }
 
 .socials li a {
-	color: #000;
+	color: #222;
 	font-size: 14px;
 	font-weight: 500;
 	display: block;
@@ -2993,7 +2993,7 @@ footer .socials-wrap {
 }
 
 .socials li a:hover {
-	color: #000;
+	color: #222;
 	opacity: 1;
 }
 
@@ -3085,7 +3085,7 @@ footer .socials-wrap {
 .button-icon {
 	height: 40px;
 	width: 40px;
-	color: #000;
+	color: #222;
 	text-align: center;
 	line-height: 40px;
 	font-size: 18px;
@@ -3102,7 +3102,7 @@ footer .socials-wrap {
 }
 
 .light-content .light-section .button-icon {
-	color: #000;
+	color: #222;
 }
 
 .white-header .button-icon {
@@ -3110,7 +3110,7 @@ footer .socials-wrap {
 }
 
 .light-content .white-header .button-icon {
-	color: #000;
+	color: #222;
 }
 
 .button-icon i {
@@ -3136,7 +3136,7 @@ footer .socials-wrap {
 	overflow: hidden;
 	width: auto;
 	padding: 0 10px;
-	color: #000;
+	color: #222;
 	-webkit-transition: color 0.05s ease-in-out;
 	transition: color 0.05s ease-in-out;
 }
@@ -3171,7 +3171,7 @@ footer .socials-wrap {
 }
 
 .light-content .light-section .button-text {
-	color: #000;
+	color: #222;
 }
 
 .white-header .button-text {
@@ -3179,7 +3179,7 @@ footer .socials-wrap {
 }
 
 .light-content .white-header .button-text {
-	color: #000;
+	color: #222;
 }
 
 .light-content .white-header.over-white-section .button-text,
@@ -3267,7 +3267,7 @@ footer .socials-wrap {
 }
 
 .button-link .button-icon i {
-	background-color: #000;
+	background-color: #222;
 	border: 1px solid rgba(0, 0, 0, 1);
 	color: transparent;
 	font-size: 14px;
@@ -3281,7 +3281,7 @@ footer .socials-wrap {
 }
 
 .button-link:hover .button-icon i {
-	background-color: #000;
+	background-color: #222;
 	color: #fff;
 	border: 1px solid rgba(0, 0, 0, 1);
 	transform: scale(1.2);
@@ -3298,7 +3298,7 @@ footer .socials-wrap {
 .light-content .button-link:hover .button-icon i,
 .dark-section .button-link:hover .button-icon i {
 	background-color: #fff;
-	color: #000;
+	color: #222;
 	border: 1px solid rgba(255, 255, 255, 1);
 	opacity: 1;
 }
@@ -3308,7 +3308,7 @@ footer .socials-wrap {
 }
 
 .light-content .light-section .button-link:hover .button-icon i {
-	background-color: #000;
+	background-color: #222;
 	color: #fff;
 	border: 1px solid rgba(0, 0, 0, 1);
 	opacity: 1;
@@ -3360,7 +3360,7 @@ footer .socials-wrap {
 	display: table;
 	width: auto;
 	padding: 0;
-	color: #000;
+	color: #222;
 	-webkit-transition: color 0.05s ease-in-out;
 	transition: color 0.05s ease-in-out;
 }
@@ -3382,7 +3382,7 @@ p .link-text {
 }
 
 .light-content .light-section .link-text {
-	color: #000;
+	color: #222;
 }
 
 .link-text span {
@@ -3619,7 +3619,7 @@ nav.open {
 	}
 
 	.flexnav li a {
-		color: #000;
+		color: #222;
 	}
 
 	.invert-header .flexnav li a {

@@ -1519,6 +1519,7 @@ Function Scroll Effects
       var nextProjectImageParallax = gsap.to ('.next-project-image', {
         duration: 1,
         clipPath: 'inset(0 0%)',
+        translateX: 0,
         scale: 1.05,
         ease: Linear.easeNone,
         scrollTrigger: {
@@ -1542,7 +1543,7 @@ Function Scroll Effects
 
       var nextProjectProgress = gsap.to ('.next-hero-progress span', {
         duration: 1,
-        width: '100%',
+        opacity: '100%',
         ease: Linear.easeNone,
         scrollTrigger: {
           trigger: '#project-nav',
@@ -3200,7 +3201,7 @@ Function Sliders
               duration: 0.2,
               borderWidth: '2px',
               scale: 1,
-              borderColor: '#000',
+              borderColor: '#222',
             });
           }
           gsap.to ('#ball-loader', {
@@ -3253,7 +3254,7 @@ Function Sliders
               duration: 0.2,
               borderWidth: '2px',
               scale: 1,
-              borderColor: '#000',
+              borderColor: '#222',
             });
           }
           gsap.to ('#ball-loader', {
@@ -3305,7 +3306,7 @@ Function Sliders
               duration: 0.2,
               borderWidth: '2px',
               scale: 1,
-              borderColor: '#000',
+              borderColor: '#222',
             });
           }
         })
@@ -4148,7 +4149,7 @@ Function Core
           scale: 0.4,
           opacity: 1,
           borderWidth: '6px',
-          borderColor: '#000',
+          borderColor: '#222',
         });
         gsap.ticker.remove (updatePosition);
       });
@@ -4164,7 +4165,7 @@ Function Core
           scale: 0.4,
           opacity: 1,
           borderWidth: '6px',
-          borderColor: '#000',
+          borderColor: '#222',
         });
         gsap.ticker.remove (updatePosition);
       });
@@ -4208,7 +4209,7 @@ Function Core
           scale: 0.4,
           borderWidth: '0px',
           opacity: 1,
-          borderColor: '#000',
+          borderColor: '#222',
         });
       });
 
@@ -4245,7 +4246,7 @@ Function Core
       });
       $ ('.nmp-button .sticky').mouseenter (function (e) {
         if ($ ('#page-content').hasClass ('light-content')) {
-          gsap.to (ball, {duration: 0.5, borderColor: '#000'});
+          gsap.to (ball, {duration: 0.5, borderColor: '#222'});
         } else {
           gsap.to (ball, {duration: 0.5, borderColor: '#fff'});
         }
@@ -4258,7 +4259,7 @@ Function Core
       });
       $ ('.nmp-button .parallax-wrap').mouseenter (function (e) {
         if ($ ('#page-content').hasClass ('light-content')) {
-          gsap.to (ball, {duration: 0.05, borderColor: '#000'});
+          gsap.to (ball, {duration: 0.05, borderColor: '#222'});
         } else {
           gsap.to (ball, {duration: 0.05, borderColor: '#fff'});
         }
@@ -4582,7 +4583,7 @@ Function Core
                   scale: 0.4,
                   opacity: 1,
                   borderWidth: '6px',
-                  borderColor: '#000',
+                  borderColor: '#222',
                 });
                 gsap.ticker.remove (updatePosition);
               });
@@ -4644,7 +4645,7 @@ Function Core
                   scale: 0.4,
                   borderWidth: '0px',
                   opacity: 1,
-                  borderColor: '#000',
+                  borderColor: '#222',
                 });
               });
 
@@ -4686,7 +4687,7 @@ Function Core
               });
               $ ('.nmp-button .sticky').mouseenter (function (e) {
                 if ($ ('#page-content').hasClass ('light-content')) {
-                  gsap.to (ball, {duration: 0.5, borderColor: '#000'});
+                  gsap.to (ball, {duration: 0.5, borderColor: '#222'});
                 } else {
                   gsap.to (ball, {duration: 0.5, borderColor: '#fff'});
                 }
@@ -4699,7 +4700,7 @@ Function Core
               });
               $ ('.nmp-button .parallax-wrap').mouseenter (function (e) {
                 if ($ ('#page-content').hasClass ('light-content')) {
-                  gsap.to (ball, {duration: 0.05, borderColor: '#000'});
+                  gsap.to (ball, {duration: 0.05, borderColor: '#222'});
                 } else {
                   gsap.to (ball, {duration: 0.05, borderColor: '#fff'});
                 }

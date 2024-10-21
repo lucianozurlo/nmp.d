@@ -122,7 +122,7 @@
 	overflow: hidden;
 	padding: 0;
 	margin-bottom: 0;
-	color: #000;
+	color: #222;
 }
 
 .hero-title-wrapper {
@@ -186,7 +186,7 @@
 }
 
 .change-header .hero-title {
-	color: #000;
+	color: #222;
 }
 
 .hero-subtitle {
@@ -200,7 +200,7 @@
 	display: block;
 	overflow: hidden;
 	margin-left: 0px;
-	color: #000;
+	color: #222;
 }
 
 .subtitle-padding-left .hero-subtitle {
@@ -228,7 +228,7 @@
 }
 
 .change-header .hero-subtitle {
-	color: #000 !important;
+	color: #222 !important;
 }
 
 .hero-arrow {
@@ -283,7 +283,7 @@
 }
 
 .hero-arrow i.arrow-icon {
-	border: solid #000;
+	border: solid #222;
 	border-width: 0px 3px 3px 0px;
 	box-sizing: border-box;
 	display: block;
@@ -384,7 +384,7 @@
 }
 
 #hero-description p {
-	color: #000;
+	color: #222;
 }
 
 .light-content #hero-description p {
@@ -540,7 +540,7 @@
 #page-nav {
 	height: auto;
 	width: 100%;
-	color: #000;
+	color: #222;
 	position: relative;
 	margin-bottom: 0;
 	opacity: 0;
@@ -594,7 +594,7 @@
 	margin: 0;
 	width: auto;
 	z-index: 10;
-	color: #000;
+	color: #222;
 	position: relative;
 	display: table;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -642,7 +642,7 @@
 	width: auto;
 	overflow: hidden;
 	padding: 0;
-	color: #000;
+	color: #222;
 }
 
 .uppercase-titles .next-hero-title {
@@ -678,7 +678,7 @@
 }
 
 .change-header .next-hero-title {
-	color: #000;
+	color: #222;
 }
 
 .next-hero-subtitle {
@@ -692,7 +692,7 @@
 	display: block;
 	overflow: hidden;
 	margin-left: 0px;
-	color: #000;
+	color: #222;
 }
 
 #page-nav .next-hero-subtitle {
@@ -714,7 +714,7 @@
 }
 
 .change-header .next-hero-subtitle {
-	color: #000;
+	color: #222;
 }
 
 /*--------------------------------------------------
@@ -737,13 +737,13 @@
 }
 
 #project-nav.change-header {
-	color: #000;
+	color: #222;
 	background-color: #fff;
 }
 
 .dark-content #project-nav.change-header {
 	color: #fff;
-	background-color: #000;
+	background-color: #222;
 }
 
 .next-project-wrap {
@@ -789,9 +789,9 @@
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
-	clip-path: inset(0 31%);
-	-webkit-transform: scale(0.48);
-	transform: scale(0.48);
+	clip-path: inset(0 0);
+	-webkit-transform: scale(0.48, 0.48) translateX(14%);
+	transform: scale(0.48, 0.48) translateX(14%)
 }
 
 .load-project-thumb-with-title .next-project-image {
@@ -929,11 +929,11 @@
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 20px;
-	color: #000;
+	color: #222;
 }
 
 .change-header .next-hero-counter span {
-	color: #000;
+	color: #222;
 }
 
 .light-content .next-hero-counter span {
@@ -941,7 +941,7 @@
 }
 
 .light-content .change-header .next-hero-counter span {
-	color: #000;
+	color: #222;
 }
 
 .dark-content .change-header .next-hero-counter span {
@@ -962,11 +962,11 @@
 	left: 0;
 	height: 6px;
 	width: 0;
-	background-color: #000;
+	background-color: #222;
 }
 
 .change-header .next-hero-progress span {
-	background-color: #000;
+	background-color: #222;
 }
 
 .light-content .next-hero-progress span {
@@ -974,7 +974,7 @@
 }
 
 .light-content .change-header .next-hero-progress span {
-	background-color: #000;
+	background-color: #222;
 }
 
 .dark-content .change-header .next-hero-progress span {
@@ -986,12 +986,12 @@
 
 #project-nav .next-hero-title,
 #project-nav .next-hero-subtitle {
-	color: #000;
+	color: #222;
 }
 
 #project-nav.change-header .next-hero-title,
 #project-nav.change-header .next-hero-subtitle {
-	color: #000;
+	color: #222;
 }
 
 .light-content #project-nav .next-hero-title,
@@ -1001,7 +1001,7 @@
 
 .light-content #project-nav.change-header .next-hero-title,
 .light-content #project-nav.change-header .next-hero-subtitle {
-	color: #000;
+	color: #222;
 }
 
 .dark-content #project-nav.change-header .next-hero-title,
@@ -1015,7 +1015,7 @@
 
 #project-nav.change-header .all-works,
 #project-nav.change-header .all-works .link-text {
-	color: #000;
+	color: #222;
 }
 
 .light-content #project-nav .all-works,
@@ -1025,7 +1025,7 @@
 
 .light-content #project-nav.change-header .all-works,
 .light-content #project-nav.change-header .all-works .link-text {
-	color: #000;
+	color: #222;
 }
 
 .dark-content #project-nav.change-header .all-works,
@@ -1089,7 +1089,7 @@
 }
 
 .temporary-hero .inner .caption-wrapper .title span {
-	color: #000;
+	color: #222;
 	opacity: 1;
 	-webkit-transform: translateY(0px);
 	transform: translateY(0px);
@@ -1099,7 +1099,7 @@
 	position: relative;
 	display: block;
 	opacity: 1;
-	color: #000;
+	color: #222;
 	transform: translateY(0px);
 	-webkit-transform: translateY(0px);
 }
@@ -1114,7 +1114,7 @@
 }
 
 .temporary-hero .next-hero-progress span {
-	background-color: #000;
+	background-color: #222;
 }
 
 .temporary-hero.light-content .next-hero-progress {
@@ -1126,7 +1126,7 @@
 }
 
 .temporary-hero .next-hero-counter span {
-	color: #000;
+	color: #222;
 }
 
 .temporary-hero.light-content .next-hero-counter span {

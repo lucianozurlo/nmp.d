@@ -12,7 +12,7 @@ document.querySelectorAll ('a[data-lang]').forEach (link => {
 });
 
 function loadTranslations (language) {
-  fetch (`langs/${language}.json`)
+  fetch (`../../langs/${language}.json`)
     .then (response => {
       if (!response.ok) {
         throw new Error ('Network response was not ok');

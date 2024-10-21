@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1920px) {
+
+    .text,
+    .text p,
+    .buy-me p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .full.xlarge h2 img {
+        max-height: 3.35vw;
+        transform: translateY(-7px);
+    }
+
+    .full.xlarge h2 img.max {
+        max-height: 3.6vw;
+        transform: translateY(-0.4vw);
+    }
+
+    .nmp span {
+        width: 17% !important;
+        min-width: 17% !important;
+        margin: 10px 0;
+    }
+
+    #main.project-detail.detail-project #hero.has-image #hero-caption .inner .from {
+        font-size: 2vw;
+    }
+
+    #main.project-detail.detail-project #hero.has-image #hero-caption .inner .desc {
+        font-size: 1.4vw;
+    }
+
+    #main.project-detail.detail-project #hero.has-image #hero-caption .inner .anio {
+        font-size: 1.2vw;
+    }
+
+    #main.project-detail .grid-item>div:nth-child(2) {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .spot {
+        width: 14px;
+        height: 14px;
+    }
+
+    .spots-container img.wide {
+        max-width: 95%;
+    }
+
+    .message-box-spot {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    /* Home */
+    /* .nmp span {
+        width: 16% !important;
+        min-width: 16% !important;
+    } */
+
+    /* Wellted */
+    .full.xlarge .one_half .content-half {
+        max-width: 95%;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1466px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 479px) {}

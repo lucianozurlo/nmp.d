@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/all.min.css" />
     <link rel="stylesheet" href="../../css/custom.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
@@ -36,7 +37,7 @@
         </div>
 
         <div class="cd-index cd-main-content">
-            <div id="page-content" class="dark-content pilltrack" data-bgcolor="#e6e6e6">
+            <div id="page-content" class="dark-content iqperfetto" data-bgcolor="#e6e6e6">
 
                 <header class="fullscreen-menu invert-header" data-menucolor="#0c0c0c">
                     <div id="header-container">
@@ -120,7 +121,7 @@
                                 <div id="hero-caption"
                                     class="content-full-width text-align-center parallax-scroll-caption">
                                     <div class="inner title">
-                                        <h1 class="hero-title caption-timeline detail title-175">
+                                        <h1 class="hero-title caption-timeline detail less">
                                             <span>Pilltrack</span>
                                             <span class="registered">®</span>
                                         </h1>
@@ -136,7 +137,9 @@
                                             <span>2021</span>
                                         </p>
                                     </div>
-                                    <div id="hero-description" class="inner">
+                                </div>
+                                <div id="hero-description" class="has-image autoscroll">
+                                    <div class="inner text">
                                         <p data-hover="Pilltrack - About Text 1"
                                             data-original="Pilltrack - About Text 1" class="has-opacity">The PillTrack
                                             is a product that helps patients to keep compliant with their medications.
@@ -148,6 +151,8 @@
                                             contacted by Athelas's engineering team to give shape to their idea,
                                             to make it attractive and modern yet discreet in an elder people's
                                             environment.</p>
+                                        <br>
+                                        <hr>
                                     </div>
                                 </div>
                             </div>
@@ -155,8 +160,7 @@
 
                         <div id="hero-image-wrapper">
                             <div id="hero-background-layer" class="parallax-scroll-image">
-                                <div id="hero-bg-image"
-                                    style="background-image:url(../../img/projects/pilltrack/pilltrack.png)">
+                                <div id="hero-bg-image" style="background-image:url(img/pilltrack-intro.png)">
                                 </div>
                             </div>
                         </div>
@@ -173,11 +177,11 @@
                                         max-width: unset;
                                         transform: translateX(15%);
                                         width: 100%;">
-                                            <img src="../../img/projects/pilltrack/led-indicator.png" alt="">
+                                            <img src="img/led-indicator.png" alt="">
                                         </div>
                                     </div>
                                     <div class="one_half last vertical-parallax w-60" data-startparallax="0"
-                                        data-endparallax="-0.1" style="max-width: 80%;">
+                                        data-endparallax="-0.1" style="max-width: 80%; padding: 0;">
                                         <div class="content-half"
                                             style="text-align: right; transform: translateX(-20%);">
                                             <h2><img src="../../img/icons/athelas-dots.gif" alt=""
@@ -219,7 +223,7 @@
                                             width: 180%;
                                             right: -35%;
                                             position: absolute;">
-                                            <img src=" img/projects/pilltrack/uses.png" alt="">
+                                            <img src="img/uses.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -229,13 +233,12 @@
                                     style="padding-bottom: 5vh; margin-top: 40%; margin-bottom: 5%;">
                                     <div class="one_full vertical-parallax no-padding flex-full-left"
                                         data-startparallax="0" data-endparallax="-0.1">
-                                        <div class="content-full">
-                                            <img src="../../img/projects/pilltrack/views.png" alt=""
-                                                style="margin-left: -10%;">
+                                        <div class="content-full d-flex-center">
+                                            <img src="img/views.png" alt="" style="margin-left: -10%;">
                                             <div class="buy-me mb-100" style="
                                                 position: absolute;
                                                 bottom: 0;
-                                                width: 75%;
+                                                width: 95%;
                                                 justify-content: flex-end;">
                                                 <a href="https://www.youtube.com/watch?v=TgvvvHJjFL8" target="_blank">
                                                     <h2 style="width: 90%; line-height: 0.9;">
@@ -255,12 +258,44 @@
 
                     </div>
 
+                    <div id="project-nav">
+                        <div class="next-project-wrap">
+                            <p class="all-works">[ Next Project ]</p>
+                            <div class="next-project-caption text-align-center content-max-width">
+                                <div class="next-caption-wrapper">
+                                    <div class="caption-wrapper">
+                                        <a class="next-ajax-link-project auto-trigger" data-type="page-transition"
+                                            href="../kali/" data-color="#333" data-firstline="Next"
+                                            data-secondline="Project"></a>
+                                        <div class="next-caption">
+                                            <div class="next-hero-counter"><span>0</span></div>
+                                            <div class="next-hero-title primary-font-title">
+                                                <span>Kali</span>
+                                            </div>
+                                            <div class="next-hero-subtitle"><span>Portable Bottle</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="next-hero-progress"><span></span></div>
+
+                            <div class="next-project-image-wrapper">
+                                <div class="next-project-image">
+                                    <div class="next-project-image-bg"
+                                        style="background-image:url(../kali/img/kali-intro-alpha.png)">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
             <div id="app"></div>
-        </div>
-
         </div>
     </main>
 
@@ -290,5 +325,3 @@
     <script src="../../js/translation-script.js"></script>
 
 </body>
-
-</html>

@@ -212,7 +212,7 @@
 
 .showcase-carousel .nmp-pagination-bullet-active {
 	height: 26px;
-	background-color: #000;
+	background-color: #222;
 }
 
 .light-content .showcase-carousel .nmp-pagination-bullet-active {
@@ -319,7 +319,7 @@ footer .progress-info {
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-repeat: no-repeat;
-	background-image: linear-gradient(#000, #000);
+	background-image: linear-gradient(#222, #222);
 	background-size: 0% 100%;
 }
 
@@ -401,7 +401,7 @@ footer .progress-info {
 	margin: 0px;
 	height: 46px;
 	width: 90px;
-	background-color: #000;
+	background-color: #222;
 	box-sizing: border-box;
 	border-radius: 30px;
 }
@@ -697,7 +697,7 @@ footer .progress-info {
 	line-height: 30px;
 	font-weight: 500;
 	font-family: 'FraktionSans', sans-serif;
-	color: #000;
+	color: #222;
 	overflow: hidden;
 	text-align: center;
 }
@@ -737,7 +737,7 @@ footer .progress-info {
 	font-size: calc(1rem + 5.15vw);
 	line-height: calc(1rem + 5.5vw);
 	font-weight: 500;
-	color: #000;
+	color: #222;
 	overflow: hidden;
 	text-align: center;
 }
@@ -756,7 +756,7 @@ footer .progress-info {
 	font-size: 18px;
 	line-height: 28px;
 	font-weight: 500;
-	color: #000;
+	color: #222;
 	overflow: hidden;
 	width: 100%;
 	margin-top: 40px;
@@ -903,7 +903,7 @@ footer .progress-info {
 }
 
 .showcase-slider .large-titles .slide-title.change-header {
-	color: #000;
+	color: #222;
 }
 
 .uppercase-titles .showcase-slider .large-titles .slide-title {
@@ -1227,7 +1227,7 @@ footer .progress-info {
 	font-size: 20px;
 	line-height: 30px;
 	font-weight: 500;
-	color: #000;
+	color: #222;
 	overflow: hidden;
 }
 
@@ -1247,7 +1247,7 @@ footer .progress-info {
 	font-size: 14px;
 	line-height: 30px;
 	font-weight: 500;
-	color: #000;
+	color: #222;
 	z-index: 10;
 	position: absolute;
 	top: 0;
@@ -1277,7 +1277,7 @@ footer .progress-info {
 
 .showcase-portfolio .nmp-project .slide-date {
 	display: none;
-	color: #000;
+	color: #222;
 }
 
 .light-content .showcase-portfolio .slide-caption .slide-date {
@@ -1334,7 +1334,7 @@ footer .progress-info {
 	left: -80px;
 	bottom: 0;
 	z-index: 0;
-	background-color: #000;
+	background-color: #222;
 	transition: height 0.2s ease-out 0s;
 }
 
@@ -1364,7 +1364,7 @@ footer .progress-info {
 }
 
 .light-content .showcase-portfolio.list-grid .nmp-project:hover .slide-title {
-	color: #000;
+	color: #222;
 }
 
 .showcase-portfolio.list-grid .nmp-project .slide-cat {
@@ -1383,7 +1383,7 @@ footer .progress-info {
 }
 
 .light-content .showcase-portfolio.list-grid .nmp-project:hover .slide-cat {
-	color: #000;
+	color: #222;
 }
 
 .showcase-portfolio.list-grid .nmp-project .slide-date {
@@ -1401,7 +1401,7 @@ footer .progress-info {
 }
 
 .light-content .showcase-portfolio.list-grid .nmp-project:hover .slide-date {
-	color: #000;
+	color: #222;
 }
 
 .showcase-portfolio.list-grid .nmp-project .slide-icon {
@@ -1425,7 +1425,7 @@ footer .progress-info {
 }
 
 .light-content .showcase-portfolio.list-grid .nmp-project:hover .slide-icon i.arrow-icon-down {
-	border: solid #000;
+	border: solid #222;
 	border-width: 0px 2px 2px 0px;
 }
 
@@ -1439,7 +1439,7 @@ footer .progress-info {
 }
 
 .light-content .showcase-portfolio.list-grid .nmp-project:hover .slide-icon i.arrow-icon-down::after {
-	background-color: #000;
+	background-color: #222;
 }
 
 .showcase-portfolio .nmp-project .slide-icon {
@@ -1457,8 +1457,8 @@ footer .progress-info {
 }
 
 .showcase-lists {
-	mask-image: linear-gradient(#0003, black 7%, black 93%, #0003 100%);
-	-webkit-mask-image: linear-gradient(#0003, black 7%, black 93%, #0003 100%);
+	mask-image: linear-gradient(#2223, black 7%, black 93%, #2223 100%);
+	-webkit-mask-image: linear-gradient(#2223, black 7%, black 93%, #2223 100%);
 }
 
 .showcase-lists .nmp-slide {
@@ -1485,7 +1485,7 @@ footer .progress-info {
 	line-height: inherit;
 	height: inherit;
 	font-weight: 500;
-	color: #000;
+	color: #222;
 	z-index: 10;
 	padding: 0;
 	box-sizing: border-box;
@@ -1907,7 +1907,7 @@ footer .progress-info {
 	font-size: 20px;
 	line-height: 30px;
 	font-weight: 500;
-	color: #000;
+	color: #222;
 	z-index: 10;
 	overflow: hidden;
 }
@@ -1934,7 +1934,7 @@ footer .progress-info {
 	font-size: 14px;
 	line-height: 30px;
 	font-weight: 500;
-	color: #000;
+	color: #222;
 	overflow: hidden;
 	opacity: 0.4;
 }
@@ -1984,7 +1984,7 @@ footer .progress-info {
 	font-size: calc(1rem + 5.15vw);
 	line-height: calc(1rem + 5.5vw);
 	font-weight: 500;
-	color: #000;
+	color: #222;
 	position: relative;
 	display: table;
 	width: auto;
@@ -2042,7 +2042,7 @@ footer .progress-info {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 500;
-	color: #000;
+	color: #222;
 	position: relative;
 	margin-top: 40px;
 }
@@ -2280,8 +2280,8 @@ footer .progress-info {
 		font-size: 14px;
 		line-height: 30px;
 		color: transparent;
-		border: 4px solid #000;
-		background-color: #000;
+		border: 4px solid #222;
+		background-color: #222;
 		border-radius: 36px;
 		-webkit-transition: background-color 0.2s ease-out 0s;
 		transition: background-color 0.2s ease-out 0s;
@@ -2324,7 +2324,7 @@ footer .progress-info {
 
 	.light-content .toggle-filters::before,
 	.light-content .toggle-filters::after {
-		background-color: #000;
+		background-color: #222;
 	}
 
 	#filters-wrapper.open .toggle-filters::before,

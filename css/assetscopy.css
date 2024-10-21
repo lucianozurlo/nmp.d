@@ -353,7 +353,7 @@ main .cd-main-content.cd-index>div {
 	font-size: 12px;
 	font-weight: 500;
 	font-family: 'FraktionSans', sans-serif;
-	color: #000;
+	color: #222;
 	padding: 5px;
 	border-radius: 5px;
 	white-space: nowrap;
@@ -555,7 +555,7 @@ img.jssocials-share-logo {
 	position: absolute;
 	bottom: 0;
 	padding: 5px;
-	background-color: #000;
+	background-color: #222;
 	left: 0;
 	right: 0;
 	margin: 0;

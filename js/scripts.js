@@ -762,7 +762,7 @@ Page Load Actions
                   );
                   gsap.to ($ ('.next-hero-progress'), {
                     duration: 0.4,
-                    width: '0%',
+                    opacity: '0%',
                     ease: Power4.easeOut,
                     onComplete: function () {
                       gsap.set ($ ('.next-hero-progress'), {opacity: 0});
@@ -792,94 +792,10 @@ Page Load Actions
         $ ('#hero-footer').addClass ('white-header');
       }
 
-      $ ('.next-ajax-link-project').on ('click', function () {
-        $ ('body').addClass ('load-project-thumb');
-        $ ('header').removeClass ('white-header');
-        $ ('#app').remove ();
-        $ ('.next-project-image-wrapper')
-          .addClass ('temporary')
-          .appendTo ('body');
-
-        if (!$ ('.next-ajax-link-project').hasClass ('auto-trigger')) {
-          $ ('body').addClass ('show-loader');
-        }
-
-        gsap.to ($ ('.next-hero-counter span'), {
-          duration: 0.3,
-          y: -20,
-          opacity: 0,
-          delay: 0,
-          ease: Power2.easeInOut,
-        });
-        gsap.to ($ ('.next-hero-title span'), {
-          duration: 0.3,
-          y: -80,
-          opacity: 0,
-          stagger: 0.05,
-          delay: 0,
-          ease: Power2.easeInOut,
-        });
-        gsap.to ($ ('.next-hero-subtitle span'), {
-          duration: 0.3,
-          y: -40,
-          opacity: 0,
-          stagger: 0.05,
-          delay: 0.1,
-          ease: Power2.easeInOut,
-        });
-
-        gsap.set ($ ('#project-nav.change-header, .next-hero-progress'), {
-          backgroundColor: 'transparent',
-        });
-        gsap.to ($ ('.next-hero-progress span'), {
-          duration: 0.4,
-          width: '100%',
-          ease: Power2.easeInOut,
-          onComplete: function () {
-            gsap.to ($ ('.next-hero-progress'), {
-              duration: 0.4,
-              width: '0%',
-              ease: Power2.easeInOut,
-            });
-          },
-        });
-
-        gsap.to ('#ball', {
-          duration: 0.3,
-          borderWidth: '4px',
-          scale: 0.5,
-          borderColor: '#999999',
-          backgroundColor: 'transparent',
-        });
-        gsap.to ('#ball-loader', {
-          duration: 0.3,
-          borderWidth: '4px',
-          top: 0,
-          left: 0,
-        });
-        $ ('#ball').removeClass ('with-icon');
-        $ ('#ball p').remove ();
-        $ ('#ball i').remove ();
-
-        gsap.to ($ ('#main-page-content, #hero, #hero-image-wrapper'), {
-          duration: 0.3,
-          opacity: 0,
-        });
-        gsap.to ($ ('.next-project-image'), {
-          duration: 0.6,
-          scale: 1.02,
-          clipPath: 'inset(0 0%)',
-          opacity: 1,
-          ease: Power2.easeInOut,
-          onComplete: function () {
-            $ ('.temporary .next-project-image').addClass ('visible');
-          },
-        });
-        gsap.to ($ ('footer, .all-works'), {
-          duration: 0.3,
-          opacity: 0,
-          ease: Power2.easeInOut,
-        });
+      $ ('.next-ajax-link-project').on ('click', function (event) {
+        event.preventDefault (); // Evita la navegación predeterminada
+        var newUrl = $ (this).attr ('href'); // Obtiene el valor del atributo href
+        window.location.href = newUrl; // Redirige a la URL
       });
     } else if ($ ('body').hasClass ('disable-ajaxload')) {
       $ ('.next-ajax-link-project').on ('click', function () {
@@ -1905,7 +1821,7 @@ Function Showcase Carousel
                   duration: 0.2,
                   borderWidth: '2px',
                   scale: 1,
-                  borderColor: '#000',
+                  borderColor: '#222',
                   backgroundColor: 'transparent',
                 });
               }
@@ -2101,7 +2017,7 @@ Function Showcase Carousel
         if ($ (this).hasClass ('change-header')) {
           gsap.to ($ ('.slide-title'), {
             duration: 1.5,
-            color: '#000',
+            color: '#222',
             delay: 0.3,
             ease: Power4.easeInOut,
           });
@@ -2145,7 +2061,7 @@ Function Showcase Carousel
           if (trigger_item.hasClass ('change-header')) {
             gsap.to ($ ('.slide-title'), {
               duration: 1.5,
-              color: '#000',
+              color: '#222',
               ease: Power4.easeInOut,
             });
           }
@@ -2492,7 +2408,7 @@ Function Showcase Slider
                   duration: 0.2,
                   borderWidth: '2px',
                   scale: 1,
-                  borderColor: '#000',
+                  borderColor: '#222',
                   backgroundColor: 'transparent',
                 });
               }
@@ -2591,7 +2507,7 @@ Function Showcase Slider
         if ($ (this).hasClass ('change-header')) {
           gsap.to ($ ('.slide-title'), {
             duration: 1.5,
-            color: '#000',
+            color: '#222',
             delay: 0.3,
             ease: Power4.easeInOut,
           });
@@ -2628,7 +2544,7 @@ Function Showcase Slider
           if (trigger_item.hasClass ('change-header')) {
             gsap.to ($ ('.slide-title'), {
               duration: 1.5,
-              color: '#000',
+              color: '#222',
               ease: Power4.easeInOut,
             });
           }
@@ -3378,7 +3294,7 @@ Function Showcase Lists
                   duration: 0.2,
                   borderWidth: '2px',
                   scale: 1,
-                  borderColor: '#000',
+                  borderColor: '#222',
                   backgroundColor: 'transparent',
                 });
               }
@@ -4571,7 +4487,7 @@ Function Showcase Gallery
                   duration: 0.2,
                   borderWidth: '2px',
                   scale: 1,
-                  borderColor: '#000',
+                  borderColor: '#222',
                   backgroundColor: 'transparent',
                 });
               }
