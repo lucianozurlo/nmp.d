@@ -550,54 +550,7 @@ video {
 /* Scroll Video End */
 
 
-
-
-/* .home-fusion {
-    width: 1043px;
-    height: 1042px;
-    left: 1235px;
-    top: 0;
-    padding-right: 50px;
-}
-
-.home-kali {
-    width: 729px;
-    height: 1006px;
-    left: 134px;
-    top: 280px;
-}
-
-.home-skinpro {
-    width: 680px;
-    height: 749px;
-    left: 1009px;
-    top: 928px;
-}
-
-.home-sahno {
-    width: 787px;
-    height: 787px;
-    left: 1496px;
-    top: 1833px;
-}
-
-.home-athelas {
-    width: 1336px;
-    height: 1147px;
-    left: 0px;
-    top: 1713px;
-}
-
-.home-wellted {
-    width: 811px;
-    height: 811px;
-    left: 809px;
-    top: 2861px;
-    transform: translateY(-10%);
-} */
-
 .home-iqperfetto {
-    /* background-color: blue; */
     width: calc(730.18 * (100vw / 1920));
     height: calc(864.25 * (100vw / 1920));
     top: calc(290.41 * (100vw / 1920));
@@ -605,7 +558,6 @@ video {
 }
 
 .home-fusion {
-    /* background-color: #ff41ff; */
     width: calc(702.11 * (100vw / 1920));
     height: calc(906.13 * (100vw / 1920));
     top: 0;
@@ -613,7 +565,6 @@ video {
 }
 
 .home-skinpro {
-    /* background-color: red; */
     width: calc(403.1 * (100vw / 1920));
     height: calc(703.07 * (100vw / 1920));
     top: calc(973.02 * (100vw / 1920));
@@ -621,7 +572,6 @@ video {
 }
 
 .home-pilltrack {
-    /* background-color: #ffd800; */
     width: calc(918.47 * (100vw / 1920));
     height: calc(1137.42 * (100vw / 1920));
     top: calc(1522.68 * (100vw / 1920));
@@ -629,7 +579,6 @@ video {
 }
 
 .home-ccexquisite {
-    /* background-color: #5e2e84; */
     width: calc(759.82 * (100vw / 1920));
     height: calc(605.74 * (100vw / 1920));
     top: calc(1679.07 * (100vw / 1920));
@@ -637,7 +586,6 @@ video {
 }
 
 .home-kali {
-    /* background-color: #00bef3; */
     width: calc(772.72 * (100vw / 1920));
     height: calc(966.76 * (100vw / 1920));
     top: calc(2894.94 * (100vw / 1920));
@@ -645,7 +593,6 @@ video {
 }
 
 .home-wellted {
-    /* background-color: #88c540; */
     width: calc(606.22 * (100vw / 1920));
     height: calc(737.34 * (100vw / 1920));
     top: calc(2803.93 * (100vw / 1920));
@@ -658,14 +605,6 @@ video {
     position: absolute;
     width: 100%;
 }
-
-/* .project .project-info .project-item {
-    font-size: calc(1rem + 1vw);
-    font-weight: 300;
-    line-height: 1;
-    margin-bottom: 8px;
-    letter-spacing: -0.05vw;
-} */
 
 .project .project-info h2 {
     font-weight: 800;
@@ -1437,10 +1376,20 @@ body.header-visible #main.project-detail.detail-project #hero-bg-image {
     margin-top: 10vh;
 }
 
+
+
+
 .fusion .next-project-wrap,
 .ccexquisite .next-project-wrap,
 .wellted .next-project-wrap {
     background-color: #131316;
+}
+
+.iqperfetto .next-project-wrap,
+.skinpro .next-project-wrap,
+.kali .next-project-wrap,
+.pilltrack .next-project-wrap {
+    background-color: #e6e6e6;
 }
 
 .fusion #project-nav .next-hero-title.primary-font-title span,
@@ -1454,13 +1403,6 @@ body.header-visible #main.project-detail.detail-project #hero-bg-image {
     color: #131316;
 }
 
-.iqperfetto .next-project-wrap,
-.skinpro .next-project-wrap,
-.kali .next-project-wrap,
-.pilltrack .next-project-wrap {
-    background-color: #e6e6e6;
-}
-
 .kali #project-nav .next-hero-title.primary-font-title span,
 .kali #project-nav .next-hero-subtitle span,
 .pilltrack #project-nav .next-hero-title.primary-font-title span,
@@ -1469,6 +1411,24 @@ body.header-visible #main.project-detail.detail-project #hero-bg-image {
 .wellted #project-nav .next-hero-subtitle span {
     color: #e6e6e6;
 }
+
+.fusion .next-hero-progress span,
+.iqperfetto .next-hero-progress span,
+.skinpro .next-hero-progress span,
+.ccexquisite .next-hero-progress span {
+    background-color: #e6e6e6;
+}
+
+.kali .next-hero-progress span,
+.pilltrack .next-hero-progress span .wellted .next-hero-progress span {
+    background-color: #131316;
+}
+
+
+
+
+
+
 
 .next-hero-progress {
     height: 2px;
@@ -1483,18 +1443,6 @@ body.header-visible #main.project-detail.detail-project #hero-bg-image {
     width: 100%;
 }
 
-.fusion .next-hero-progress span,
-.iqperfetto .next-hero-progress span,
-.ccexquisite .next-hero-progress span,
-.pilltrack .next-hero-progress span {
-    background-color: #e6e6e6;
-}
-
-.skinpro .next-hero-progress span,
-.kali .next-hero-progress span,
-.wellted .next-hero-progress span {
-    background-color: #131316;
-}
 
 #page-content.wellted .next-project-image-wrapper {
     z-index: 111;
