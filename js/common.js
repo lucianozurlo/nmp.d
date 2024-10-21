@@ -1531,7 +1531,7 @@ Function Scroll Effects
       });
 
       var nextAllWorks = gsap.to ('.all-works', {
-        opacity: 1,
+        opacity: 0,
         ease: Linear.easeNone,
         scrollTrigger: {
           trigger: '#project-nav',
@@ -1542,6 +1542,18 @@ Function Scroll Effects
       });
 
       var nextProjectProgress = gsap.to ('.next-hero-progress span', {
+        duration: 1,
+        opacity: '100%',
+        ease: Linear.easeNone,
+        scrollTrigger: {
+          trigger: '#project-nav',
+          start: 'top top',
+          end: '+=100%',
+          scrub: true,
+        },
+      });
+
+      var nextProject = gsap.to ('.next-project', {
         duration: 1,
         opacity: '100%',
         ease: Linear.easeNone,
@@ -2077,7 +2089,7 @@ Function First Load
         duration: 0.3,
         borderWidth: '4px',
         scale: 0.5,
-        backgroundColor: 'rgba(0, 0, 0, 0)',
+        backgroundColor: 'rgba(34, 34, 34, 0)',
         opacity: 1,
       });
       gsap.to (

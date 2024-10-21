@@ -338,7 +338,7 @@ pre {
 	white-space: pre;
 	white-space: pre-wrap;
 	word-wrap: break-word;
-	background-color: rgba(0, 0, 0, 0.05)
+	background-color: rgba(34, 34, 34, 0.05)
 }
 
 .light-content pre,
@@ -348,7 +348,7 @@ pre {
 }
 
 .light-content .light-section pre {
-	background-color: rgba(0, 0, 0, 0.05);
+	background-color: rgba(34, 34, 34, 0.05);
 	color: #222;
 }
 
@@ -530,7 +530,7 @@ figure img {
 }
 
 figcaption {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(34, 34, 34, 0.3);
 	bottom: 0px;
 	color: #fff;
 	font-weight: 400;
@@ -543,7 +543,7 @@ figcaption {
 }
 
 fieldset {
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(34, 34, 34, 0.1);
 	margin: 0 0 24px;
 	padding: 0;
 }
@@ -612,7 +612,7 @@ table {
 
 thead,
 .light-content .light-section thead {
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(34, 34, 34, 1);
 	color: #fff;
 }
 
@@ -643,7 +643,7 @@ tr,
 
 tr:nth-child(2n),
 .light-content .light-section tr:nth-child(2n) {
-	background-color: rgba(0, 0, 0, 0.05);
+	background-color: rgba(34, 34, 34, 0.05);
 }
 
 .light-content tr:nth-child(2n),
@@ -696,7 +696,7 @@ hr.animated-line:before {
 	display: block;
 	width: 0;
 	height: 1px;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(34, 34, 34, 0.1);
 }
 
 .light-content hr.animated-line:before,
@@ -705,7 +705,7 @@ hr.animated-line:before {
 }
 
 .light-content .light-section hr.animated-line:before {
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(34, 34, 34, 0.1);
 }
 
 hr.animated.animated-line:before {
@@ -1801,7 +1801,7 @@ scale-up .link,
 .loadbar {
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(34, 34, 34, 0.8);
 	position: absolute;
 	top: 0px;
 	right: 0;
@@ -1812,7 +1812,7 @@ scale-up .link,
 .hold-progress-bar {
 	width: 0%;
 	height: 0px;
-	background: rgba(0, 0, 0, 1);
+	background: rgba(34, 34, 34, 1);
 	position: absolute;
 	top: 0px;
 	left: 0;
@@ -2076,7 +2076,7 @@ nav.open {
 	}
 
 	.flexnav:hover li a {
-		color: rgba(0, 0, 0, 0.4);
+		color: rgba(34, 34, 34, 0.4);
 	}
 
 	.light-content .classic-menu .flexnav:hover li a {
@@ -2088,7 +2088,7 @@ nav.open {
 	}
 
 	.light-content .classic-menu.white-header .flexnav:hover li a {
-		color: rgba(0, 0, 0, 0.4);
+		color: rgba(34, 34, 34, 0.4);
 	}
 
 	.classic-menu .flexnav li:hover a {
@@ -3268,7 +3268,7 @@ footer .socials-wrap {
 
 .button-link .button-icon i {
 	background-color: #222;
-	border: 1px solid rgba(0, 0, 0, 1);
+	border: 1px solid rgba(34, 34, 34, 1);
 	color: transparent;
 	font-size: 14px;
 	border-radius: 100%;
@@ -3283,7 +3283,7 @@ footer .socials-wrap {
 .button-link:hover .button-icon i {
 	background-color: #222;
 	color: #fff;
-	border: 1px solid rgba(0, 0, 0, 1);
+	border: 1px solid rgba(34, 34, 34, 1);
 	transform: scale(1.2);
 	text-indent: 0px;
 	opacity: 1;
@@ -3304,13 +3304,13 @@ footer .socials-wrap {
 }
 
 .light-content .light-section .button-link .button-icon i {
-	border: 1px solid rgba(0, 0, 0, 1);
+	border: 1px solid rgba(34, 34, 34, 1);
 }
 
 .light-content .light-section .button-link:hover .button-icon i {
 	background-color: #222;
 	color: #fff;
-	border: 1px solid rgba(0, 0, 0, 1);
+	border: 1px solid rgba(34, 34, 34, 1);
 	opacity: 1;
 }
 
@@ -3847,7 +3847,7 @@ nav.open {
 @media only screen and (max-width: 767px) {
 
 	figcaption {
-		background-color: rgba(0, 0, 0, 0.3);
+		background-color: rgba(34, 34, 34, 0.3);
 		bottom: 0px;
 		font-size: 10px;
 		padding: 5px 10px;

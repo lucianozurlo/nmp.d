@@ -264,14 +264,14 @@
 	transform: translateY(30px);
 	-webkit-transform: translateY(30px);
 	border-radius: 50px;
-	border: 2px solid rgba(0, 0, 0, 0.4);
+	border: 2px solid rgba(34, 34, 34, 0.4);
 	cursor: pointer;
 	-webkit-transition: border 0.2s ease-in-out 0s;
 	transition: border 0.2s ease-in-out 0s;
 }
 
 .hero-arrow:hover span {
-	border: 2px solid rgba(0, 0, 0, 1);
+	border: 2px solid rgba(34, 34, 34, 1);
 }
 
 .light-content .hero-arrow span {
@@ -321,7 +321,7 @@
 	width: 100%;
 	height: 1px;
 	opacity: 0;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(34, 34, 34, 0.1);
 	transform: scaleX(0);
 	transform-origin: center;
 	transition: all 0.3s ease-out 0s;
@@ -1110,7 +1110,7 @@
 }
 
 .temporary-hero .next-hero-progress {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(34, 34, 34, 0.3);
 }
 
 .temporary-hero .next-hero-progress span {

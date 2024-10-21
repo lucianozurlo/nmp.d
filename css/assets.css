@@ -151,7 +151,7 @@ main .cd-main-content.cd-about::before {
 
 .flexnav li a {
 	background: #fff;
-	border-bottom: 1px solid rgba(0, 0, 0, .05);
+	border-bottom: 1px solid rgba(34, 34, 34, .05);
 	color: #222;
 	display: block;
 	padding: 20px 0;
@@ -186,7 +186,7 @@ main .cd-main-content.cd-about::before {
 }
 
 .flexnav .touch-button {
-	background: rgba(0, 0, 0, 0);
+	background: rgba(34, 34, 34, 0);
 	display: inline-block;
 	height: 60px;
 	position: absolute;
@@ -808,7 +808,7 @@ img.jssocials-share-logo {
 	height: 40px;
 	right: 20px;
 	top: 60px;
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(34, 34, 34, 1);
 	color: #fff;
 	opacity: 0;
 	border-radius: 20px;
@@ -820,7 +820,7 @@ img.jssocials-share-logo {
 }
 
 .nmp-img-popup-close:hover {
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(34, 34, 34, 1);
 }
 
 .nmp-img-popup-close::after {
@@ -840,7 +840,7 @@ img.jssocials-share-logo {
 	width: 26px;
 	height: 50px;
 	left: 60px;
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(34, 34, 34, 1);
 	color: #fff;
 	opacity: 0;
 	border-radius: 4px;
@@ -851,7 +851,7 @@ img.jssocials-share-logo {
 }
 
 .nmp-img-popup-prev:hover {
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(34, 34, 34, 1);
 }
 
 .nmp-img-popup-prev::after {
@@ -871,7 +871,7 @@ img.jssocials-share-logo {
 	width: 26px;
 	height: 50px;
 	right: 60px;
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(34, 34, 34, 1);
 	color: #fff;
 	opacity: 0;
 	border-radius: 4px;
@@ -882,7 +882,7 @@ img.jssocials-share-logo {
 }
 
 .nmp-img-popup-next:hover {
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(34, 34, 34, 1);
 }
 
 .nmp-img-popup-next::after {
