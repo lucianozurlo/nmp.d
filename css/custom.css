@@ -1420,7 +1420,8 @@ body.header-visible #main.project-detail.detail-project #hero-bg-image {
 }
 
 .kali .next-hero-progress span,
-.pilltrack .next-hero-progress span .wellted .next-hero-progress span {
+.pilltrack .next-hero-progress span,
+.wellted .next-hero-progress span {
     background-color: #131316;
 }
 
