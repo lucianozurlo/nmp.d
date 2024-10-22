@@ -1107,6 +1107,11 @@ h6.has-mask span>span {
 	background-size: 0% 100%;
 }
 
+.text.has-mask-fill>span {
+	-webkit-text-fill-color: rgba(60, 60, 60, 0.1);
+	background-image: linear-gradient(#3c3c3c, #3c3c3c);
+}
+
 .has-mask-fill.block-title>span {
 	display: block;
 }
@@ -1118,7 +1123,7 @@ h6.has-mask span>span {
 }
 
 .light-content .light-section .has-mask-fill>span {
-	-webkit-text-fill-color: rgba(34, 34, 34, 0.1);
+	-webkit-text-fill-color: rgba(68, 68, 68, 0.1);
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-repeat: no-repeat;

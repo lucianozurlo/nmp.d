@@ -1486,8 +1486,40 @@ Function Scroll Effects
         '#hero-caption.parallax-scroll-caption',
         {
           duration: 1,
-          yPercent: 5,
-          opacity: 0.5,
+          yPercent: 100,
+          opacity: -0.6,
+          ease: Linear.easeNone,
+          scrollTrigger: {
+            trigger: '#hero',
+            start: 'top top',
+            end: () => `+=${$ ('#hero').outerHeight ()}`,
+            scrub: true,
+          },
+        }
+      );
+
+      var heroCaptionParallaxDesc = gsap.to (
+        '#hero-description.parallax-scroll-caption',
+        {
+          duration: 1,
+          yPercent: 1, // Movimiento medio
+          opacity: 0.6,
+          ease: Linear.easeNone,
+          scrollTrigger: {
+            trigger: '#hero',
+            start: 'top top',
+            end: () => `+=${$ ('#hero').outerHeight ()}`,
+            scrub: true,
+          },
+        }
+      );
+
+      var heroCaptionParallaxImg = gsap.to (
+        '#hero-image-wrapper.parallax-scroll-caption',
+        {
+          duration: 1,
+          yPercent: 1, // Movimiento más rápido
+          opacity: -0.4,
           ease: Linear.easeNone,
           scrollTrigger: {
             trigger: '#hero',
