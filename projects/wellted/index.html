@@ -187,14 +187,12 @@
                                 <div class="content-row full xlarge dark-section mt--200 z-i-1" data-bgcolor="#131316">
                                     <div class="one_full">
                                         <div class="content-full">
-                                            <div class="scroll-bound">
-                                                <div class="video-content">
-                                                    <video class="video-scroll" muted preload>
-                                                        <source src="vid/scroll-selfcleaning.mp4" type="video/mp4">
-                                                        <p>Your user agent does not support the HTML5 Video element.</p>
-                                                    </video>
-                                                </div>
-                                            </div>
+                                            <video id="video-restart" class="video-scroll" autoplay muted preload style="
+                                            min-height: calc(100vh - 100px);
+                                            margin-bottom: 20px;">
+                                                <source src="vid/scroll-selfcleaning.webm" type="video/webm">
+                                                <p>Your user agent does not support the HTML5 Video element.</p>
+                                            </video>
                                         </div>
                                     </div>
                                 </div>
@@ -346,7 +344,8 @@
     <script src="../../js/common.js"></script>
     <script src="../../js/contact.js"></script>
     <script src="../../js/scripts.js"></script>
-    <script src="../../js/scroll-video.js"></script>
+    <script src="../../js/video-scroll.js"></script>
+    <script src="../../js/video-restart.js"></script>
     <script src="../../js/spots.js"></script>
     <script src="../../js/translation-script.js"></script>
 

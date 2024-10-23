@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Control Scroll</title>
+    <style>
+        body {
+            height: 300vh;
+            /* Mayor altura para el scroll */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-scroll {
+            width: 600px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <video id="video-restart" class="video-scroll" autoplay muted preload style="
+min-height: calc(100vh - 100px);
+margin-bottom: 20px;">
+        <source src="vid/scroll-selfcleaning.webm" type="video/webm">
+        <p>Your user agent does not support the HTML5 Video element.</p>
+    </video>
+
+    <script src="../../js/video-restart.js"></script>
+
+</body>
+
+</html>

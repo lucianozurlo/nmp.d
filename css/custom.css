@@ -264,6 +264,10 @@ header {
     height: 74px;
 }
 
+#logo a {
+    margin-left: 5px;
+}
+
 .fullscreen-menu .flexnav li ul.submenu {
     margin-left: 111px;
     margin-top: -11px;
@@ -309,9 +313,9 @@ header.over-sidebar #lang span {
     color: #fff;
 }
 
-#main {
+/* #main {
     overflow-x: hidden;
-}
+} */
 
 #main.home #hero .content-max-width {
     padding-left: 3.5vw !important;
@@ -677,8 +681,10 @@ video {
 #contact .inner h2 {
     font-size: calc(1rem + 7vw);
     font-weight: 800;
-    margin-top: 3vw;
+    margin-top: 2vw;
     letter-spacing: -.4vw;
+    line-height: 1;
+    margin-bottom: 0;
 }
 
 #contact .inner .button-box {
@@ -903,7 +909,7 @@ video {
 }
 
 #main.project-detail.detail-project #hero.has-image #hero-caption .inner .from {
-    margin-bottom: 0.2vw;
+    margin-bottom: 1vw;
     font-size: 1.4vw;
     letter-spacing: -.075vw;
 }
@@ -1334,7 +1340,7 @@ video {
     font-weight: 700;
     color: #0c0c0c;
     line-height: 1;
-    letter-spacing: -15px;
+    letter-spacing: -10px;
     margin: 0 auto;
     display: inline-flex;
     flex-direction: row;
@@ -1468,7 +1474,7 @@ video {
 
 
 #page-content.wellted .next-project-image-wrapper {
-    z-index: 111;
+    z-index: 1111111;
 }
 
 #page-content.iqperfetto .one_half.vertical-parallax.mb-100 {

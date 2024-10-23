@@ -323,9 +323,63 @@ Function Scroll Effects
 
     //Scroll Down
     $ ('.scroll-down, .hero-arrow.link').on ('click', function () {
-      // Calcula 20vh en píxeles
-      var heroheight = $ ('#hero').height () - window.innerHeight * 0.4; // 20vh
+      var heroheight = $ ('#hero').height ();
+      if ($ ('body').hasClass ('smooth-scroll')) {
+        gsap.to (scrollbar, {
+          duration: 1.5,
+          scrollTop: heroheight,
+          ease: Power4.easeInOut,
+        });
+        gsap.to ('#ball', {
+          duration: 0.3,
+          borderWidth: '4px',
+          scale: 0.5,
+          borderColor: '#999999',
+          delay: 0.15,
+        });
+      } else {
+        $ ('html,body').animate ({scrollTop: heroheight}, 800);
+        gsap.to ('#ball', {
+          duration: 0.3,
+          borderWidth: '4px',
+          scale: 0.5,
+          borderColor: '#999999',
+          delay: 0.15,
+        });
+      }
+    });
 
+    //Project Scroll Down
+    $ ('body.projects .hero-arrow').on ('click', function () {
+      var heroheight = $ ('#hero-caption').height () - 200;
+      if ($ ('body').hasClass ('smooth-scroll')) {
+        gsap.to (scrollbar, {
+          duration: 1.5,
+          scrollTop: heroheight,
+          ease: Power4.easeInOut,
+        });
+        gsap.to ('#ball', {
+          duration: 0.3,
+          borderWidth: '4px',
+          scale: 0.5,
+          borderColor: '#999999',
+          delay: 0.15,
+        });
+      } else {
+        $ ('html,body').animate ({scrollTop: heroheight}, 800);
+        gsap.to ('#ball', {
+          duration: 0.3,
+          borderWidth: '4px',
+          scale: 0.5,
+          borderColor: '#999999',
+          delay: 0.15,
+        });
+      }
+    });
+
+    //Project Scroll Down
+    $ ('body.projects .scroll-down').on ('click', function () {
+      var heroheight = $ ('#hero').height () + 100;
       if ($ ('body').hasClass ('smooth-scroll')) {
         gsap.to (scrollbar, {
           duration: 1.5,
@@ -1428,24 +1482,8 @@ Function Scroll Effects
         });
       }
 
-      var heroHomeCaptionParallax = gsap.to (
-        '.nmp-home #hero-caption.parallax-scroll-caption',
-        {
-          duration: 1,
-          yPercent: 5,
-          opacity: 0.5,
-          ease: Linear.easeNone,
-          scrollTrigger: {
-            trigger: '#hero',
-            start: 'top top',
-            end: () => `+=${$ ('#hero').outerHeight ()}`,
-            scrub: true,
-          },
-        }
-      );
-
-      var heroCaptionParallaxTitle = gsap.to (
-        '.nmp-project #hero-caption.parallax-scroll-caption',
+      var heroCaptionParallax = gsap.to (
+        '#hero-caption.parallax-scroll-caption',
         {
           duration: 1,
           yPercent: 100,
@@ -1461,10 +1499,10 @@ Function Scroll Effects
       );
 
       var heroCaptionParallaxDesc = gsap.to (
-        '.nmp-project #hero-description.parallax-scroll-caption',
+        '#hero-description.parallax-scroll-caption',
         {
           duration: 1,
-          yPercent: 1,
+          yPercent: 1, // Movimiento medio
           opacity: 0.6,
           ease: Linear.easeNone,
           scrollTrigger: {
@@ -1477,10 +1515,10 @@ Function Scroll Effects
       );
 
       var heroCaptionParallaxImg = gsap.to (
-        '.nmp-project #hero-image-wrapper.parallax-scroll-caption',
+        '#hero-image-wrapper.parallax-scroll-caption',
         {
           duration: 1,
-          yPercent: 1,
+          yPercent: 1, // Movimiento más rápido
           opacity: -0.4,
           ease: Linear.easeNone,
           scrollTrigger: {
