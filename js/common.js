@@ -1394,11 +1394,23 @@ Function Scroll Effects
 
         window.addEventListener ('resize', setheroImageProperties);
 
-        var heroImageParallax = gsap.to (
+        // Animación inicial con desaceleración muy gradual
+        gsap.fromTo (
           '.parallax-scroll-image #hero-bg-image',
+          {backgroundPosition: '50% 50%'},
           {
+            backgroundPosition: '105% 50%',
+            duration: 1.5,
+            ease: 'power4.out', // Easing con desaceleración más gradual
+            onComplete: startScrollAnimation, // Inicia la animación de scroll una vez completa esta animación
+          }
+        );
+
+        // Función que inicia la animación de scroll
+        function startScrollAnimation () {
+          gsap.to ('.parallax-scroll-image #hero-bg-image', {
             duration: 1,
-            backgroundPosition: 'center ' + 95 + '%',
+            backgroundPosition: '105% 50%',
             ease: Linear.easeNone,
             scrollTrigger: {
               trigger: '#hero',
@@ -1406,8 +1418,8 @@ Function Scroll Effects
               end: () => `+=${$ ('#hero').outerHeight () - window.innerHeight}`,
               scrub: true,
             },
-          }
-        );
+          });
+        }
 
         var heroFooterParallax = gsap.to ('#hero-footer', {
           duration: 1,
