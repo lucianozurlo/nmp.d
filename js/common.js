@@ -1399,7 +1399,7 @@ Function Scroll Effects
           '.parallax-scroll-image #hero-bg-image',
           {backgroundPosition: '50% 50%'},
           {
-            backgroundPosition: '105% 50%',
+            backgroundPosition: '95% 50%',
             duration: 1.5,
             ease: 'power4.out', // Easing con desaceleración más gradual
             onComplete: startScrollAnimation, // Inicia la animación de scroll una vez completa esta animación
@@ -1410,7 +1410,7 @@ Function Scroll Effects
         function startScrollAnimation () {
           gsap.to ('.parallax-scroll-image #hero-bg-image', {
             duration: 1,
-            backgroundPosition: '105% 50%',
+            backgroundPosition: '95% 50%',
             ease: Linear.easeNone,
             scrollTrigger: {
               trigger: '#hero',

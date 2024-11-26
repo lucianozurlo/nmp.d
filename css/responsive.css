@@ -6,7 +6,7 @@
     }
 }
 
-/* Estilos para pantallas 4K Retina */
+/* Estilos para pantallas Retina */
 @media (min-resolution: 2dppx) {
     #main.home #hero .content-max-width {
         padding-left: 3.5vw !important;
@@ -14,7 +14,7 @@
     }
 }
 
-/* Estilos para pantallas 4K Retina HD */
+/* Estilos para pantallas HD */
 @media (min-width: 1280px) and (max-width: 1920px) {
     header {
         height: 58px;
@@ -290,10 +290,32 @@
         margin-left: 20%;
     }
 
-    #hero-bg-image {
+    #hero-bg-image,
+    #page-content .next-project-image-bg.alpha {
         background-position: 50% 70% !important;
-        background-size: auto 70vh;
     }
+
+    #hero-bg-image {
+        animation: backgroundResize 1s ease-in-out forwards !important;
+        animation-delay: 1.2s !important;
+    }
+
+    @keyframes backgroundResize {
+        0% {
+            background-size: auto 100vh;
+        }
+
+        100% {
+            background-size: auto 70vh;
+        }
+    }
+
+
+    #page-content .next-project-image-bg.alpha {
+        background-size: auto 100vh;
+    }
+
+
 
     .carousel .left-arrow svg,
     .carousel .right-arrow svg {
@@ -398,10 +420,7 @@
         margin-top: 10%;
     }
 
-    #page-content .next-project-image-bg.alpha {
-        background-position: 50% 70% !important;
-        background-size: auto 70vh;
-    }
+
 
 
 
@@ -640,6 +659,6 @@
     }
 
     .wellted-exploded {
-        margin-top: -0;
+        margin-top: 0;
     }
 }
