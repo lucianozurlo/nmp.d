@@ -1,3 +1,5 @@
+console.log ('release 1');
+
 // Pre-cargar imágenes
 function preloadImages (imagePaths) {
   return Promise.all (
