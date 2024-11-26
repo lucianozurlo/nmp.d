@@ -1,6 +1,0 @@
-{
-  "intro": ["wellted-intro.png", "wellted-intro-alpha.png","kali-intro.png", "kali-intro-alpha.png"],
-  "seq": [
-    { "prefix": "scroll-open", "start": 0, "end": 34 }
-  ],
-}

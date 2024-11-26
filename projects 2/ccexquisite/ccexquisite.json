@@ -1,8 +1,0 @@
-{
-  "intro": ["kali-intro.png", "kali-intro-alpha.png","ccexquisite-intro.png", "ccexquisite-intro-alpha.png"],
-  "seq": [
-    { "prefix": "scroll-place", "start": 0, "end": 34 }
-    { "prefix": "scroll-exploded", "start": 0, "end": 34 }
-  ],
-  "vid": ["loop-color.webm"]
-}
