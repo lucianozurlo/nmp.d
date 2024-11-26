@@ -60,14 +60,14 @@ function loadSequenceImages (prefix, start, end, pageName) {
   const paths = [];
   for (let i = start; i <= end; i++) {
     const paddedIndex = String (i).padStart (2, '0'); // Pone 01, 02, ..., 10, 11, etc.
-    paths.push (`/projects/${pageName}/seq/${prefix}${paddedIndex}.png`);
+    paths.push (`./projects/${pageName}/seq/${prefix}${paddedIndex}.png`);
   }
   return paths;
 }
 
 // Cargar las imágenes y videos para la página actual
 function loadImagesForPage (pageName) {
-  const jsonPath = `/projects/${pageName}/${pageName}.json`; // Ruta absoluta desde la raíz
+  const jsonPath = `./projects/${pageName}/${pageName}.json`; // Ruta absoluta desde la raíz
 
   console.log (`Ruta al JSON: ${jsonPath}`); // Verifica la ruta
 
@@ -88,12 +88,12 @@ function loadImagesForPage (pageName) {
 
       // Preparamos las rutas de los videos
       const vidPaths = data.vid
-        ? data.vid.map (video => `/projects/${pageName}/vid/${video}`)
+        ? data.vid.map (video => `./projects/${pageName}/vid/${video}`)
         : [];
 
       // Preparamos las rutas de las imágenes intro
       const introPaths = data.intro
-        ? data.intro.map (image => `/projects/_intro/${image}`)
+        ? data.intro.map (image => `./projects/_intro/${image}`)
         : [];
 
       // Unimos todas las rutas de imágenes y videos
