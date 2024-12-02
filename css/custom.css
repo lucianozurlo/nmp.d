@@ -205,6 +205,10 @@ a.disabled {
     margin-top: 200px !important;
 }
 
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
 .mb-10 {
     margin-bottom: 10px !important;
 }
@@ -1525,8 +1529,13 @@ video {
     background-color: #131316 !important
 }
 
-#page-content.fusion .next-project-image-wrapper,
-#page-content.iqperfetto .bg-no-next .next-project-image-wrapper {
+
+#page-content.fusion .next-project-image-wrapper #page-content.iqperfetto .bg-no-next .next-project-image-wrapper,
+#page-content.iqperfetto .next-project-wrap.bg-no-next .next-project-image-bg.light,
+#page-content.iqperfetto .bg-base.next,
+#page-content.skinpro .bg-no-next .next-project-image-wrapper,
+#page-content.skinpro .next-project-wrap.bg-no-next .next-project-image-bg.light,
+#page-content.skinpro .bg-base.next {
     background-color: #e6e6e6 !important
 }
 
