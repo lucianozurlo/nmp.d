@@ -701,25 +701,42 @@ i.arrow-icon-down.white {
 }
 
 #hero-bg-image {
-    max-width: 100vw;
     max-height: 100vh;
-    /* background-position: 105% center; */
+    background-position: 15% 50%;
     background-repeat: no-repeat;
     animation: 1s ease-in-out start-hero-bg;
+    background-size: contain !important;
 }
 
-/* 
-@keyframes start-hero-bg {
+.bg-base {
+    background-color: #131316;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    opacity: 1 !important;
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1 !important;
+}
 
-    0% {
-        background-position: 50% center;
-    }
+.bg-base.next {
+    top: 0 !important;
+    left: 0 !important;
+}
 
-    100% {
-        background-position: 105% center;
-    }
-} */
+.next-project-wrap .next-project-image-bg.light {
+    background-color: #e6e6e6 !important;
+    transition: .3s ease-in-out !important;
+}
 
+.next-project-wrap.bg-no-next .next-project-image-bg.light {
+    background-color: transparent !important;
+}
+
+.bg-base.light,
+.next-project-image-bg.light {
+    background-color: #e6e6e6 !important;
+}
 
 .projects-wrapper {
     display: flex;
@@ -1476,6 +1493,10 @@ video {
 }
 
 .next-project-image-bg {
+    background-size: contain !important;
+    -webkit-transform: scale(1) translatex(0);
+    transform: scale(1) translatex(0);
+    transition: transform .6s ease-in-out;
     z-index: 11111;
 }
 
@@ -1483,35 +1504,46 @@ video {
     z-index: 1111111;
 }
 
+.next-project-caption {
+    opacity: 1;
+    transition: opacity .6s ease-in-out;
+}
+
 .next-project-image-wrapper {
     transition: background-color 0.3s ease-in-out;
 }
 
-#page-content.fusion .bg-no-next .next-project-image-wrapper,
-#page-content.ccexquisite .bg-no-next .next-project-image-wrapper,
-#page-content.wellted .bg-no-next .next-project-image-wrapper,
-#page-content.pilltrack .next-project-image-wrapper,
-#page-content.kali .next-project-image-wrapper,
-#page-content.wellted .next-project-image-wrapper,
-#page-content.fusion .next-hero-progress span,
-#page-content.iqperfetto .next-hero-progress span,
-#page-content.skinpro .next-hero-progress span,
-#page-content.ccexquisite .next-hero-progress span {
-    background-color: #131316
+#page-content .bg-no-next .next-project-image-wrapper,
+#page-content.next-project-image-wrapper,
+#page-content .next-hero-progress span {
+    background-color: #131316 !important
 }
+
+
+
+#page-content.fusion .bg-no-next .next-project-image-wrapper {
+    background-color: #131316 !important
+}
+
+#page-content.fusion .next-project-image-wrapper,
+#page-content.iqperfetto .bg-no-next .next-project-image-wrapper {
+    background-color: #e6e6e6 !important
+}
+
+
+
 
 #page-content.iqperfetto .bg-no-next .next-project-image-wrapper,
 #page-content.kali .bg-no-next .next-project-image-wrapper,
 #page-content.pilltrack .bg-no-next .next-project-image-wrapper,
 #page-content.skinpro .bg-no-next .next-project-image-wrapper,
-#page-content.fusion .next-project-image-wrapper,
 #page-content.iqperfetto .next-project-image-wrapper,
 #page-content.skinpro .next-project-image-wrapper,
 #page-content.ccexquisite .next-project-image-wrapper,
 #page-content.pilltrack .next-hero-progress span,
 #page-content.kali .next-hero-progress span,
 #page-content.wellted .next-hero-progress span {
-    background-color: #e6e6e6
+    background-color: #e6e6e6 !important
 }
 
 #page-content.fusion #project-nav .next-hero-title.primary-font-title,
@@ -1535,16 +1567,6 @@ video {
     color: #aaa !important;
 }
 
-.next-project-caption {
-    opacity: 1;
-    transition: opacity .6s ease-in-out;
-}
-
-.next-project-image-bg {
-    -webkit-transform: scale(1) translatex(0);
-    transform: scale(1) translatex(0);
-    transition: transform .6s ease-in-out;
-}
 
 .bg-no-next .next-project-caption {
     opacity: 0;
@@ -1553,62 +1575,6 @@ video {
 .bg-no-next .next-project-image-bg {
     -webkit-transform: scale(1) translateX(0);
     transform: scale(1) translateX(0);
-}
-
-#page-content.fusion .next-project-image-bg {
-    background-image: url('../projects/_intro/iqperfetto-intro.png');
-}
-
-#page-content.fusion .next-project-image-bg.alpha {
-    background-image: url('../projects/_intro/iqperfetto-intro-alpha.png') !important;
-}
-
-#page-content.iqperfetto .next-project-image-bg {
-    background-image: url('../projects/_intro/skinpro-intro.png');
-}
-
-#page-content.iqperfetto .next-project-image-bg.alpha {
-    background-image: url('../projects/_intro/skinpro-intro-alpha.png') !important;
-}
-
-#page-content.skinpro .next-project-image-bg {
-    background-image: url('../projects/_intro/pilltrack-intro.png');
-}
-
-#page-content.skinpro .next-project-image-bg.alpha {
-    background-image: url('../projects/_intro/pilltrack-intro-alpha.png') !important;
-}
-
-#page-content.pilltrack .next-project-image-bg {
-    background-image: url('../projects/_intro/ccexquisite-intro.png');
-}
-
-#page-content.pilltrack .next-project-image-bg.alpha {
-    background-image: url('../projects/_intro/ccexquisite-intro-alpha.png') !important;
-}
-
-#page-content.ccexquisite .next-project-image-bg {
-    background-image: url('../projects/_intro/kali-intro.png');
-}
-
-#page-content.ccexquisite .next-project-image-bg.alpha {
-    background-image: url('../projects/_intro/kali-intro-alpha.png') !important;
-}
-
-#page-content.kali .next-project-image-bg {
-    background-image: url('../projects/_intro/wellted-intro.png');
-}
-
-#page-content.kali .next-project-image-bg.alpha {
-    background-image: url('../projects/_intro/wellted-intro-alpha.png') !important;
-}
-
-#page-content.wellted .next-project-image-bg {
-    background-image: url('../projects/_intro/fusion-intro.png');
-}
-
-#page-content.wellted .next-project-image-bg.alpha {
-    background-image: url('../projects/_intro/fusion-intro-alpha.png') !important;
 }
 
 #project-nav .next-hero-title.primary-font-title {

@@ -136,6 +136,10 @@
         margin-left: 10px;
     }
 
+    .percentage-wrapper {
+        width: 20vw;
+    }
+
     .percentage {
         opacity: 1;
         font-size: calc(2rem + 2vw);
