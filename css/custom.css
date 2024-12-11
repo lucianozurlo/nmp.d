@@ -24,6 +24,10 @@ a.disabled {
     border: 2px solid #575656;
 }
 
+.button-wrap.menu {
+    min-width: 80px;
+}
+
 .button-wrap.left .icon-wrap {
     margin-top: 10px;
 }
@@ -760,6 +764,7 @@ i.arrow-icon-down.white {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 .project {
@@ -869,7 +874,7 @@ video {
 .home-fusion {
     width: calc(702.11 * (100vw / 1920));
     height: calc(906.13 * (100vw / 1920));
-    top: 0;
+    top: calc(55 * (100vw / 1920));
     left: calc(1217.89 * (100vw / 1920));
 }
 
@@ -947,7 +952,7 @@ video {
 }
 
 .project.home-skinpro .project-info {
-    right: -87%;
+    right: -100%;
     top: 25%;
 }
 

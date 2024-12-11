@@ -1896,7 +1896,7 @@ header {
 }
 
 #logo img {
-	height: 12px;
+	height: 11px;
 	width: auto;
 	max-width: none;
 	-webkit-transition: opacity 0.15s ease-in-out 0s;
@@ -3053,7 +3053,7 @@ footer .socials-wrap {
 	height: 80px;
 	display: flex;
 	position: relative;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -3440,9 +3440,9 @@ nav.open {
 		height: 100px;
 	}
 
-	#header-container {
+	/* #header-container {
 		padding: 10px 60px;
-	}
+	} */
 
 	.flexnav li {
 		padding: 20px;
@@ -3526,7 +3526,7 @@ nav.open {
 	}
 
 	#header-container {
-		padding: 10px 40px;
+		padding: 0 40px;
 	}
 
 	nav {
@@ -3539,7 +3539,7 @@ nav.open {
 		visibility: visible;
 		pointer-events: none;
 		opacity: 0;
-		padding: 20px 0;
+		padding: 0;
 	}
 
 	nav.open {

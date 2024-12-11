@@ -17,7 +17,7 @@
 /* Estilos para pantallas HD */
 @media (min-width: 1280px) and (max-width: 1920px) {
     header {
-        height: 58px;
+        height: 74px;
         box-shadow: 0px 0px 30px #0c0c0c15;
         -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
@@ -28,12 +28,12 @@
     }
 
     .icon-wrap {
-        width: 58px;
-        height: 58px;
+        width: 74px;
+        height: 74px;
     }
 
     #logo img {
-        height: 10px;
+        height: 11px;
     }
 
     .hero-arrow {
@@ -115,7 +115,7 @@
     }
 
     #main.home #hero-caption .hero-title {
-        width: 80vw;
+        width: 100%;
     }
 
     /* Wellted */
@@ -137,7 +137,7 @@
     }
 
     .percentage-wrapper {
-        width: 20vw;
+        width: 25vw;
     }
 
     .percentage {
@@ -150,6 +150,10 @@
         justify-content: flex-start;
     } */
 
+    .icon-wrap {
+        justify-content: center;
+    }
+
     .fullscreen-menu .flexnav li ul.submenu {
         margin-left: unset;
         margin-top: unset;
@@ -160,6 +164,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #header-container nav .flexnav .menu-item {
+        justify-content: center;
+    }
+
+    .fullscreen-menu .flexnav li ul.submenu li a {
+        font-size: 28px;
     }
 
     h2 {
@@ -185,17 +197,29 @@
     }
 
     #main.home #main-content.projects h1 {
-        font-size: 11vw;
+        font-size: 12 vw;
+        letter-spacing: -2px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #itemsWrapper .inline-flex {
+        justify-content: center;
     }
 
     .project .project-info h2 {
-        font-size: calc(2.5rem + 3vw);
-        letter-spacing: -5px !important;
+        font-size: calc(2.2rem + 1vw);
+        letter-spacing: -3px !important;
+        width: min-intrinsic;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+        margin-bottom: 5px;
     }
 
     .project .project-info p.desc {
         font-weight: 300;
-        font-size: calc(1.1rem + .5vw);
+        font-size: calc(1rem + .2vw);
     }
 
     #main-page-content {
@@ -203,7 +227,7 @@
     }
 
     .projects-container {
-        height: calc(3861.7*(111vw / 768))
+        height: calc(3861.7*(118vw / 768))
     }
 
     .home-fusion {
@@ -237,27 +261,27 @@
     .home-ccexquisite {
         width: calc(759.82*(70vw / 768));
         height: calc(605.74*(70vw / 768));
-        top: calc(1679.07*(158vw / 768));
+        top: calc(1679.07*(164vw / 768));
         left: calc(1160.18*(21vw / 768));
     }
 
     .home-kali {
         width: calc(772.72*(70vw / 768));
         height: calc(966.76*(70vw / 768));
-        top: calc(2894.94*(109vw / 768));
+        top: calc(2894.94*(112vw / 768));
         left: -15vw;
     }
 
     .home-wellted {
         width: calc(606.22*(70vw / 768));
         height: calc(737.34*(70vw / 768));
-        top: calc(2803.93*(135vw / 768));
+        top: calc(2803.93*(141vw / 768));
         left: calc(1313.78*(25vw / 768));
     }
 
     .project.home-fusion .project-info {
-        left: -7%;
-        top: 43%;
+        left: -30%;
+        top: 40%;
     }
 
     .project.home-iqperfetto .project-info {
@@ -266,28 +290,39 @@
     }
 
     .project.home-skinpro .project-info {
-        right: 110%;
+        right: 115%;
         top: 25%;
     }
 
     .project.home-pilltrack .project-info {
-        right: -67%;
-        top: 90%;
+        right: -56%;
+        top: 97%;
     }
 
     .project.home-ccexquisite .project-info {
         left: -30%;
-        top: -5%;
+        top: -27%;
     }
 
     .project.home-kali .project-info {
-        right: -94%;
-        top: 50%;
+        right: -76%;
+        top: 72%;
     }
 
     .project.home-wellted .project-info {
         right: 43%;
-        top: 40%;
+        top: 50%;
+    }
+
+    #aboutus .caption-timeline.text {
+        line-height: 1.5 !important;
+        font-size: 17px !important;
+    }
+
+    .next-hero-subtitle {
+        line-height: 1.5 !important;
+        font-size: 17px !important;
+        padding: 0 3.5vw !important;
     }
 
     #main.project-detail.detail-project #hero.has-image #caption-img .inner.title {
