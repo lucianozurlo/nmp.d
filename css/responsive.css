@@ -208,6 +208,10 @@
         justify-content: center;
     }
 
+    #contact .inner h2 {
+        font-size: calc(.6rem + 7vw);
+    }
+
     .project .project-info h2 {
         font-size: calc(2.2rem + 1vw);
         letter-spacing: -3px !important;
@@ -351,7 +355,6 @@
         }
     }
 
-
     #page-content .next-project-image-bg.alpha {
         background-size: auto 100vh;
     }
@@ -469,12 +472,6 @@
         margin-top: 10%;
     }
 
-
-
-
-
-
-
     #page-content.fusion .spots-container {
         transform: translateX(0) !important
     }
@@ -484,7 +481,6 @@
         padding-left: 10vw !important;
         max-width: 90vw !important;
     }
-
 
     .iqperfetto-ultra {
         margin-top: 0 !important;
