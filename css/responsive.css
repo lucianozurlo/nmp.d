@@ -410,13 +410,10 @@
     }
 
     #main.project-detail.detail-project #hero.has-image #caption-img .inner .from {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
-    #main.project-detail.detail-project #hero.has-image #caption-img .inner .desc {
-        font-size: 4vw;
-    }
-
+    #main.project-detail.detail-project #hero.has-image #caption-img .inner .desc,
     #main.project-detail.detail-project #hero.has-image #caption-img .inner .anio {
         font-size: 3.5vw;
     }
@@ -430,6 +427,13 @@
         padding: 10px 12vw 10px 12vw;
         max-width: 100%;
         width: 100%;
+    }
+
+
+    #hero-background-layer {
+        position: relative !important;
+        transform: unset !important;
+        inset: unset !important;
     }
 
     .content-row.xlarge.content-column-resp {
