@@ -106,8 +106,8 @@
     }
 
     .message-box-spot {
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 15px !important;
+        line-height: 25px !important;
     }
 
     #main.home #hero-caption {
@@ -459,8 +459,16 @@
         height: auto;
     }
 
+    #main.project-detail .grid-item img {
+        margin-bottom: 15px;
+    }
+
     #main.project-detail .grid-item>div {
         max-height: unset !important;
+    }
+
+    .full.xlarge .one_half.last .content-half {
+        padding: 8vw !important;
     }
 
     .full.xlarge .one_full,
@@ -488,6 +496,15 @@
         margin-top: 5vw !important;
         padding-left: 10vw !important;
         max-width: 90vw !important;
+    }
+
+    .message-box-spot {
+        font-size: 16px !important;
+        line-height: 26px !important;
+        width: min-intrinsic;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
     }
 
     .iqperfetto-ultra {
