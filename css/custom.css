@@ -455,6 +455,10 @@ i.arrow-icon-down.white {
     margin-bottom: 10px;
 }
 
+#aboutus .hero-subtitle>span:first-child {
+    font-size: 22px;
+}
+
 #aboutus .caption-timeline.text {
     margin: 0;
 }
