@@ -387,6 +387,7 @@ header.over-sidebar #lang span {
 
 #main.home #hero-caption .hero-title {
     height: 100vh;
+    max-height: 100vh;
     display: flex !important;
     justify-content: center;
     align-items: center;

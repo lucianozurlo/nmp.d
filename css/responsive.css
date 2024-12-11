@@ -185,6 +185,7 @@
     .nmp span {
         width: 33% !important;
         min-width: 33% !important;
+        margin: 1.75vw 0;
     }
 
     #lang {
@@ -355,7 +356,9 @@
         background-size: auto 100vh;
     }
 
-
+    .hero-arrow {
+        bottom: 10%;
+    }
 
     .carousel .left-arrow svg,
     .carousel .right-arrow svg {
