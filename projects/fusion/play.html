@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e3e3e3;
+        }
+
+        .animation-container {
+            position: relative;
+            width: 300px;
+            /* Ajusta al tamaño de tus secuencias */
+            height: 300px;
+            margin: 10px;
+        }
+
+        .frame {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <video autoplay muted loop playsinline>
+        <source src="../_vidMP4/ccexquisite-loop-color.mp4" type="video/mp4">
+    </video>
+    <div class="animation-container" id="fusion-loop-massage">
+        <img class="frame" src="" alt="Animation 1 Frame">
+    </div>
+    <div class="animation-container" id="ccexquisite-loop-color">
+        <img class="frame" src="" alt="ccexquisite-loop-color">
+    </div>
+    <script>
+        // Configuración de las secuencias
+        const sequences = [
+            {
+                id: "fusion-loop-massage",
+                baseName: "fusion-loop-massage",
+                totalFrames: 3, // Cambia según el número de frames de la secuencia
+                frameRate: 30,
+            },
+            {
+                id: "ccexquisite-loop-color",
+                baseName: "ccexquisite-loop-color",
+                totalFrames: 35,
+                frameRate: 30,
+            }
+        ];
+
+        // Función para generar la ruta de un frame con ceros iniciales
+        function getFrameSrc(baseName, frame) {
+            return `../_vid-ok/${baseName}${String(frame).padStart(2, "0")}.png`;
+        }
+
+        // Inicializar y reproducir las animaciones
+        sequences.forEach(({id, baseName, totalFrames, frameRate}) => {
+            const frameElement = document.querySelector(`#${id} .frame`);
+            let currentFrame = 1;
+
+            // Precargar imágenes
+            const images = [];
+            // Precargar imágenes y verificar errores
+            for (let i = 1; i <= totalFrames; i++) {
+                const img = new Image();
+                const src = getFrameSrc(baseName, i);
+                img.src = src;
+                img.onload = () => console.log(`Cargado: ${src}`);
+                img.onerror = () => console.error(`Error al cargar: ${src}`);
+                images.push(img);
+            }
+
+
+            // Reproducir la animación
+            function playAnimation() {
+                frameElement.src = getFrameSrc(baseName, currentFrame);
+                currentFrame = currentFrame < totalFrames ? currentFrame + 1 : 1;
+            }
+
+            // Esperar la precarga antes de iniciar la animación
+            Promise.all(images.map(img => img.decode().catch(err => {
+                console.error(`Decoding error: ${img.src}`);
+                return null; // Continúa aunque una imagen falle
+            }))).then(() => {
+                setInterval(playAnimation, 1000 / frameRate);
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
