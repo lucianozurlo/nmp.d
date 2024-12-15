@@ -67,7 +67,7 @@
             background: linear-gradient(to right, #00ff11, #00ff1100) 0 0 / 4% 100%,
                 linear-gradient(to left, #00ff11, #00ff1100) 100% 0 / 4% 100%,
                 linear-gradient(to bottom, #00ff11, #00ff1100) 0 0 / 100% 6%,
-                linear-gradient(to top, #00ff11, #00ff1100) 0 100% / 100% 6%;
+                linear-gradient(to top, #00ff11, #00ff1100) 0 100% / 100% 6% !important;
             background-repeat: no-repeat;
         }
 
@@ -146,11 +146,11 @@
             if (esSafari && esIOS) {
                 console.log('Safari en iOS')
                 div.textContent = "Safari en iOS";
-                div.classList.add('estilo-safari-ios');
-            } else if (esSafari && !esIOS) {
-                console.log('Safari en macOS (u otro sistema no iOS)')
-                div.textContent = "Safari (no iOS)";
-                div.classList.add('estilo-safari-mac');
+                div.classList.add('lightBg-ios');
+                // } else if (esSafari && !esIOS) {
+                //     console.log('Safari en macOS (u otro sistema no iOS)')
+                //     div.textContent = "Safari (no iOS)";
+                //     div.classList.add('lightBg');
             } else {
                 console.log('No es Safari, deja el estilo por defecto')
             }
