@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preload" href="../_intro/iqperfetto-intro.png" as="image">
     <link rel="preload" href="../_intro/iqperfetto-intro-alpha.png" as="image">
+    <link rel="preload" href="../_vid/fusion-loop-massage01.png" as="image">
+    <link rel="preload" href="../_vid/fusion-loop-massage02.png" as="image">
+    <link rel="preload" href="../_vid/fusion-loop-massage03.png" as="image">
 </head>
 
 <body class="hidden hidden-ball uppercase-titles projects" data-primary-color="#333">
@@ -312,38 +315,11 @@
                                 <div class="content-row full xlarge dark-section mt-150" data-bgcolor="#131316">
                                     <div class="one_full">
                                         <div class="content-full">
-                                            <video class="video-scroll h-full" autoplay loop muted preload>
-                                                <source src="../_vid/fusion-loop-massage.webm" type="video/webm">
-                                                <p>Your user agent does not support the HTML5 Video element.</p>
-                                            </video>
-                                            <p style="color: #fff;">Prueba fondo Safari</p>
-                                            <video id="player" playsinline autoplay loop muted preload
-                                                data-plyr-config='{"autoplay": true, "loop": true, "controls": []}'>
-                                                <source src="../_vid/fusion-loop-massage.webm" type="video/webm" />
-                                            </video>
-
-                                            <div class="plyr-container" style="background-color: transparent;">
-                                                <video id="player" playsinline autoplay loop muted preload
-                                                    data-plyr-config='{"autoplay": true, "loop": true, "controls": [], "backgroundVideo": true}'>
-                                                    <source src="../_vid/fusion-loop-massage.webm" type="video/webm" />
-                                                </video>
+                                            <div class="content-videos">
+                                                <div class="wrapper-videos" id="fusion-loop-massage">
+                                                    <img class="frame-seq" src="" alt="fusion-loop-massage">
+                                                </div>
                                             </div>
-                                            <p style="color: #fff;">Prueba fondo Safari MOV</p>
-                                            <video src="../_vid/fusion-loop-massage.mov" autoplay loop playsinline
-                                                muted>
-                                                Tu navegador no admite la etiqueta de video.
-                                            </video>
-                                            <video src="../_vid/fusion-loop-massage.mov" autoplay loop playsinline
-                                                muted>
-                                                Tu navegador no admite la etiqueta de video.
-                                            </video>
-                                            <video class="video-scroll h-full" autoplay loop muted preload>
-                                                <source src="../_vid/fusion-loop-massage.mov" type="video/mov">
-                                                <p>Tu navegador no admite la etiqueta de video.</p>
-                                            </video>
-
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -450,7 +426,52 @@
     <script src="../../js/contact.js"></script>
     <script src="../../js/scripts.js"></script>
     <script src="../../js/video-scroll.js"></script>
+    <script src="../../js/videos-alpha.js"></script>
     <script src="../../js/spots.js"></script>
+
+    <script>
+        const sequences = [
+            {
+                id: "fusion-loop-massage",
+                baseName: "fusion-loop-massage",
+                totalFrames: 3,
+                frameRate: 30,
+            }
+        ];
+
+        function getFrameSrc(baseName, frame) {
+            return `../_vid/${baseName}${String(frame).padStart(2, "0")}.png`;
+        }
+
+        sequences.forEach(({id, baseName, totalFrames, frameRate}) => {
+            const container = document.getElementById(id);
+            const frameElement = container.querySelector('.frame-seq');
+            let currentFrame = 1;
+
+            const images = [];
+            let loadedCount = 0;
+
+            for (let i = 1; i <= totalFrames; i++) {
+                const img = new Image();
+                img.src = getFrameSrc(baseName, i);
+                img.onload = () => {
+                    loadedCount++;
+                    if (loadedCount === totalFrames) {
+                        frameElement.src = getFrameSrc(baseName, 1);
+                        frameElement.style.display = 'block';
+
+                        setInterval(() => {
+                            currentFrame = currentFrame < totalFrames ? currentFrame + 1 : 1;
+                            frameElement.src = getFrameSrc(baseName, currentFrame);
+                        }, 1000 / frameRate);
+                    }
+                };
+                img.onerror = () => console.error(`Error al cargar: ${img.src}`);
+                images.push(img);
+            }
+        });
+    </script>
+
 
 </body>
 
