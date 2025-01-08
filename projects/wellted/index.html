@@ -186,7 +186,8 @@
                         <div id="main-content">
                             <div id="main-page-content">
 
-                                <div class="content-row full xlarge dark-section mt-200 z-i-11" data-bgcolor="#131316">
+                                <div class="content-row full xlarge dark-section mt-200 mb-100 z-i-11"
+                                    data-bgcolor="#131316">
                                     <div class="one_half vertical-parallax" data-startparallax="0"
                                         data-endparallax="-0.1">
                                         <div class="content-half">
@@ -202,12 +203,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content-row full xlarge dark-section mt--200 z-i-1" data-bgcolor="#131316">
+                                <div class="content-row full xlarge dark-section z-i-1" data-bgcolor="#131316">
                                     <div class="one_full">
                                         <div class="content-full">
                                             <div class="content-videos">
-                                                <div id="wellted-selfcleaning" class="wrapper-videos">
-                                                    <video class="video-scroll" autoplay muted preload playsinline>
+                                                <div class="wrapper-videos">
+                                                    <video id="wellted-selfcleaning" class="video-scroll" muted preload
+                                                        playsinline style="
+                                                        max-height: unset;
+                                                        min-height: unset;
+                                                        padding: 0;
+                                                        margin: 0;
+                                                        height: unset;">
                                                         <source src="../_vid/wellted-scroll-selfcleaning.mp4"
                                                             type="video/mp4">
                                                     </video>
@@ -216,7 +223,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content-row full xlarge dark-section mt--100" data-bgcolor="#131316">
+                                <div class="content-row full xlarge dark-section mt-100" data-bgcolor="#131316">
                                     <div class="one_half vertical-parallax" data-startparallax="0"
                                         data-endparallax="-0.1">
                                         <div class="content-half">
@@ -358,45 +365,6 @@
     <script src="../../js/spots.js"></script>
     <script src="../../js/nextheader.js"></script>
 
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const video = document.getElementById('wellted-selfcleaning');
-            video.currentTime = 0;
-
-            if (!video) {
-                console.error('No se encontró el video con el ID "wellted-selfcleaning".');
-                return;
-            }
-
-            // Silenciar el video para permitir autoplay sin interacción
-            video.muted = true;
-
-            const options = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.5
-            };
-
-            const callback = (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        video.play().catch(error => {
-                            console.error('Error al reproducir el video:', error);
-                        });
-                    } else {
-                        video.pause();
-                        video.currentTime = 0;
-                    }
-                });
-            };
-
-            const observer = new IntersectionObserver(callback, options);
-            observer.observe(video);
-        });
-
-
-    </script>
 
 </body>
 
