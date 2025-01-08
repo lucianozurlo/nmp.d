@@ -1940,6 +1940,69 @@ Function Scroll Effects
       }
     }
 
+    // **Añadido: Observador de mutaciones para .page-is-changing con manejo de clases adicionales**
+    (function () {
+      const body = document.body;
+      const targetNode = body;
+      const config = {attributes: true, attributeFilter: ['class']};
+
+      let isChanging = false;
+      let addDisableTimeout = null;
+      let removeDisableTimeout = null;
+
+      const callback = function (mutationsList, observer) {
+        for (let mutation of mutationsList) {
+          if (
+            mutation.type === 'attributes' &&
+            mutation.attributeName === 'class'
+          ) {
+            if ($ (body).hasClass ('page-is-changing')) {
+              isChanging = true;
+
+              // Limpiar timeouts si se vuelve a agregar la clase antes de removerla
+              if (addDisableTimeout) {
+                clearTimeout (addDisableTimeout);
+                addDisableTimeout = null;
+              }
+              if (removeDisableTimeout) {
+                clearTimeout (removeDisableTimeout);
+                removeDisableTimeout = null;
+              }
+
+              // Verificar y añadir clases adicionales al <body>
+              if ($ ('.next-project-image-bg').hasClass ('next-black')) {
+                $ (body).addClass ('next-black-bg');
+              }
+              if ($ ('.next-project-image-bg').hasClass ('next-white')) {
+                $ (body).addClass ('next-white-bg');
+              }
+            } else if (isChanging) {
+              isChanging = false;
+
+              // Remover las clases adicionales del <body>
+              $ (body).removeClass ('next-black-bg next-white-bg');
+
+              // Añadir la clase .disable después de 0.5 segundos (500 ms)
+              addDisableTimeout = setTimeout (function () {
+                $ ('.next-project-image-bg').addClass ('disable');
+
+                // Remover la clase .disable después de 2 segundos (2000 ms)
+                removeDisableTimeout = setTimeout (function () {
+                  $ ('.next-project-image-bg').removeClass ('disable');
+                  removeDisableTimeout = null;
+                }, 1000);
+
+                addDisableTimeout = null;
+              }, 43);
+            }
+          }
+        }
+      };
+
+      const observer = new MutationObserver (callback);
+      observer.observe (targetNode, config);
+    }) ();
+
     // Reinit All Scrolltrigger After Page Load
 
     imagesLoaded ('body', function () {

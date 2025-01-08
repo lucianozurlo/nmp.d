@@ -38,7 +38,7 @@
         </div>
 
         <div class="cd-index cd-main-content">
-            <div id="page-content" class="light-content nmp-project wellted" data-bgcolor="#131316">
+            <div id="page-content" class="light-content nmp-project wellted black" data-bgcolor="#131316">
 
                 <header class="fullscreen-menu invert-header" data-menucolor="#0c0c0c">
                     <div id="header-container">
@@ -88,8 +88,8 @@
                             </div>
                         </nav>
                         <div class="button-wrap menu burger-lines">
-                            <div class="icon-wrap parallax-wrap">
-                                <div class="button-icon parallax-element">
+                            <div class="icon-wrap">
+                                <div class="button-icon">
                                     <div id="burger-wrapper">
                                         <div id="menu-burger">
                                             <span></span>
@@ -207,15 +207,10 @@
                                         <div class="content-full">
                                             <div class="content-videos">
                                                 <div id="wellted-selfcleaning" class="wrapper-videos">
-                                                    <div class="content-videos">
-                                                        <div id="wellted-selfcleaning" class="wrapper-videos">
-                                                            <video class="video-scroll" autoplay muted preload
-                                                                playsinline>
-                                                                <source src="../_vid/wellted-scroll-selfcleaning.mp4"
-                                                                    type="video/mp4">
-                                                            </video>
-                                                        </div>
-                                                    </div>
+                                                    <video class="video-scroll" autoplay muted preload playsinline>
+                                                        <source src="../_vid/wellted-scroll-selfcleaning.mp4"
+                                                            type="video/mp4">
+                                                    </video>
                                                 </div>
                                             </div>
                                         </div>
@@ -318,9 +313,9 @@
 
                             <div class="next-hero-progress"><span></span></div>
 
-                            <div class="next-project-image-wrapper">
+                            <div class="next-project-image-wrapper next-black">
                                 <div class="next-project-image">
-                                    <div class="next-project-image-bg"
+                                    <div class="next-project-image-bg next-black"
                                         style="background-image:url(../_intro/fusion-intro-alpha.png); background-size: 40vw !important;">
                                     </div>
                                     <div class="bg-base next"></div>
@@ -361,6 +356,47 @@
     <script src="../../js/video-restart.js"></script>
     <script src="../../js/videos-alpha.js"></script>
     <script src="../../js/spots.js"></script>
+    <script src="../../js/nextheader.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById('wellted-selfcleaning');
+            video.currentTime = 0;
+
+            if (!video) {
+                console.error('No se encontró el video con el ID "wellted-selfcleaning".');
+                return;
+            }
+
+            // Silenciar el video para permitir autoplay sin interacción
+            video.muted = true;
+
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            const callback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        video.play().catch(error => {
+                            console.error('Error al reproducir el video:', error);
+                        });
+                    } else {
+                        video.pause();
+                        video.currentTime = 0;
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(callback, options);
+            observer.observe(video);
+        });
+
+
+    </script>
 
 </body>
 
