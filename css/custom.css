@@ -733,7 +733,7 @@ height: 90vh !important; */
     background-position: 15% 50%;
     background-repeat: no-repeat;
     animation: 1s ease-in-out start-hero-bg;
-    background-size: contain !important;
+    /* background-size: contain !important; */
     z-index: 1111111111 !important;
 }
 
