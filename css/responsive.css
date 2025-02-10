@@ -127,6 +127,11 @@
 
 /* Estilos para tabletas */
 @media (min-width: 768px) and (max-width: 1279px) {
+    .fullscreen-menu .flexnav {
+        margin-top: 100px !important;
+        margin-left: 100px !important;
+    }
+
     .fullscreen-menu .flexnav li a {
         font-size: calc(2.5rem + 4.15vw) !important;
         line-height: calc(2.5rem + 4.5vw) !important;
