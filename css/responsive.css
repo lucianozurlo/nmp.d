@@ -133,16 +133,117 @@
     }
 
     .fullscreen-menu .flexnav li a {
-        font-size: calc(2.25rem + 4.15vw) !important;
-        line-height: calc(2.25rem + 4.5vw) !important;
+        font-size: calc(2rem + 3vw) !important;
+        line-height: calc(2rem + 3vw) !important;
     }
 
     .fullscreen-menu .flexnav li ul li a {
-        font-size: calc(2.8vw) !important;
-        line-height: calc(3.5vw) !important;
+        text-align: left;
+        font-size: calc(2.5vw) !important;
+        line-height: calc(3.15vw) !important;
+    }
+
+    .fullscreen-menu .flexnav li ul {
+        list-style-type: none;
+    }
+
+    .fullscreen-menu .flexnav li ul.submenu {
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+
+    #main.project-detail.detail-project #hero.has-image #caption-img .inner .from,
+    #main.project-detail.detail-project #hero.has-image #hero-caption .inner .from {
+        font-size: 2.4vw;
+    }
+
+    #main.project-detail.detail-project #hero.has-image #caption-img .inner .desc,
+    #main.project-detail.detail-project #hero.has-image #hero-caption .inner .desc {
+        font-size: 1.8vw;
+    }
+
+    #main.project-detail.detail-project #hero.has-image #caption-img .inner .anio,
+    #main.project-detail.detail-project #hero.has-image #hero-caption .inner .anio {
+        font-size: 1.4vw;
+    }
+
+    #main.project-detail.detail-project #hero.has-image #hero-description .inner {
+        max-width: 40vw;
+    }
+
+    .text,
+    .text p,
+    #hero-description p,
+    .buy-me p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .message-box-spot {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    #project-nav {
+        display: none;
+    }
+
+    #project-nav-responsive {
+        display: inherit;
+    }
+
+    #project-nav-responsive .next-project-wrap {
+        height: 12.5%;
+    }
+
+    #page-content.black #project-nav-responsive .next-project-wrap {
+        background-color: #131316;
+    }
+
+    #page-content.white #project-nav-responsive .next-project-wrap {
+        background-color: #eaeaea;
+    }
+
+    #project-nav-responsive .next-project-image-wrapper {
+        transform: translateY(11vh)
+    }
+
+    #project-nav-responsive .next-project-image-wrapper .next-project-image-bg {
+        transform: translateY(11vh) scale(1.4) !important;
+    }
+
+    #project-nav-responsive .next-project-image {
+        overflow: visible;
+        clip-path: unset !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #project-nav-responsive .next-project-image a {
+        transition: all .2s ease-in-out;
+    }
+
+    #project-nav-responsive .next-project-image a:hover {
+        transform: scale(1.1) !important;
+    }
+
+    #project-nav-responsive .next-project-image a img {
+        height: 120vh;
+        margin-top: 20vh;
+    }
+
+    #project-nav-responsive .all-works {
+        top: 24vh;
+    }
+
+    #project-nav-responsive .all-works p {
+        font-size: 16px;
     }
 
 }
+
+
 
 /* Estilos para celulares */
 @media (max-width: 767px) {
