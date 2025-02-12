@@ -1087,8 +1087,11 @@ video {
     color: #fff;
 }
 
-#project-nav-responsive {
-    display: none;
+#project-nav-responsive,
+#project-nav-responsive .next-project-image-wrapper,
+#project-nav-responsive .next-project-image-wrapper .next-project-image-bg,
+#project-nav-responsive .next-project-image-wrapper.temporary {
+    display: none !important;
 }
 
 .light-content #project-nav .all-works,

@@ -980,7 +980,7 @@ Page Load Actions
         $ ('body').addClass ('load-project-thumb');
         $ ('header').removeClass ('white-header');
         $ ('#app').remove ();
-        $ ('.next-project-image-wrapper')
+        $ ('#project-nav .next-project-image-wrapper')
           .addClass ('temporary')
           .appendTo ('body');
 
@@ -1337,7 +1337,7 @@ Function Lazy Load
             ease: Power2.easeOut,
             onComplete: function () {
               $ ('.next-project-image-wrapper.temporary').remove ();
-              $ ('.temporary-hero').remove ();
+              $ ('#project-nav .temporary-hero').remove ();
             },
           });
           if (!isMobile ()) {
