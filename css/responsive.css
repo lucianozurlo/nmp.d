@@ -201,7 +201,7 @@
     }
 
     #project-nav-responsive .next-project-image-wrapper {
-        transform: translateY(11vh);
+        /* transform: translateY(11vh); */
         display: inherit !important;
     }
 
