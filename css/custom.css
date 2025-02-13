@@ -1071,12 +1071,12 @@ video {
 }
 
 #page-content.light-content header {
-    background-color: #131316 !important;
+    background-color: #1313162b !important;
     box-shadow: 0px 0px 30px #0c0c0c15;
 }
 
 #page-content.dark-content header {
-    background-color: #f9f9f9 !important;
+    background-color: #f9f9f92b !important;
     box-shadow: 0px 0px 30px #13131615;
 }
 
