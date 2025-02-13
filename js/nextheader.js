@@ -23,7 +23,10 @@
               // Cambiamos de dark a light
               $ ('#page-content')
                 .addClass ('light-content')
-                .removeClass ('dark-content');
+                .addClass ('noblur-light')
+                .removeClass ('dark-content')
+                .removeClass ('noblur-dark');
+
               console.log ('Cambio a LIGHT');
             } else if (
               $ ('#page-content').hasClass ('light-content') &&
@@ -32,7 +35,9 @@
               // Cambiamos de light a dark
               $ ('#page-content')
                 .addClass ('dark-content')
-                .removeClass ('light-content');
+                .addClass ('noblur-dark')
+                .removeClass ('light-content')
+                .removeClass ('noblur-light');
               console.log ('estaba light ahora dark');
             }
           } else if (!previouslyHadClass && currentlyHasClass) {

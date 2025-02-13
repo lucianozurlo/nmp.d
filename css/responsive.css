@@ -1,5 +1,6 @@
 /* Estilos para pantallas 4K */
-@media (min-resolution: 3840x2160) {
+@media (-webkit-min-device-pixel-ratio: 38402160),
+(min-resolution: 3840x2160) {
     #main.home #hero .content-max-width {
         padding-left: 3.5vw !important;
         padding-right: 3.5vw !important;
@@ -7,7 +8,8 @@
 }
 
 /* Estilos para pantallas Retina */
-@media (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx) {
     #main.home #hero .content-max-width {
         padding-left: 3.5vw !important;
         padding-right: 3.5vw !important;
@@ -212,6 +214,7 @@
 
     #project-nav-responsive .next-project-image {
         overflow: visible;
+        -webkit-clip-path: unset !important;
         clip-path: unset !important;
         display: flex;
         justify-content: center;
@@ -460,9 +463,21 @@
     }
 
     #hero-bg-image {
+        -webkit-animation: backgroundResize 1s ease-in-out forwards !important;
         animation: backgroundResize 1s ease-in-out forwards !important;
+        -webkit-animation-delay: 1.2s !important;
         animation-delay: 1.2s !important;
         transform: translate(0%, -25%) scale(2) !important
+    }
+
+    @-webkit-keyframes backgroundResize {
+        0% {
+            background-size: auto 100vh;
+        }
+
+        100% {
+            background-size: auto 70vh;
+        }
     }
 
     @keyframes backgroundResize {
