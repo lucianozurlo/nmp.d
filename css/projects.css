@@ -13,7 +13,7 @@
 .splide__track {
    width: 1280px;
    height: 100vh;
-   margin: 0 auto;
+   margin: 3vh auto 0;
 }
 .splide__list {
    align-items: center;
@@ -85,7 +85,7 @@
 }
 .splide__slide.is-active .slide-label {
    opacity: 1;
-   font-weight: 700;
+   font-weight: 500;
    font-size: calc(1rem + 0.8vw);
    letter-spacing: -0.1rem;
    margin-top: 11px;
@@ -111,20 +111,47 @@
    justify-content: center;
    transform: translateY(-50%);
    transition: all 0.2s ease-in-out;
+
+   opacity: 0.3;
+
+   width: auto;
+   height: 6vh;
+   cursor: pointer;
 }
+
 .splide__arrow:hover {
    transform: translateY(-50%) scale(1.2);
 }
+
 .splide__arrow svg {
    width: 100%;
    height: 100%;
-   stroke: #111;
+   stroke: #fff;
    fill: none;
    stroke-width: 3;
+
+   stroke: #6e6e6e;
+   stroke-width: 0.3px;
+   stroke-linecap: round;
+   fill: none;
+   height: 100%;
+
+   transition: all 0.2s ease-in-out;
 }
+
+.splide__arrow:hover svg {
+   opacity: 1;
+   transform: scale(1.25);
+}
+
 .splide__arrow--prev svg {
    transform: scaleX(1);
+   transform-origin: center right;
 }
+.splide__arrow--next svg {
+   transform-origin: center left;
+}
+
 .splide__arrow polyline {
    stroke-linecap: round;
    stroke-linejoin: round;
@@ -143,10 +170,83 @@
 #project-nav {
    height: calc(100vh + 1px);
    bottom: calc(-100vh - 1px);
+   display: flex;
+   justify-content: center;
 }
 .next-project-image {
    transform: unset !important;
 }
 .next-project-image-wrapper {
    height: 100vh;
+}
+
+.next-project-header {
+   width: 1400px !important;
+   max-width: 1400px !important;
+   display: flex;
+   justify-content: space-between;
+   position: relative !important;
+   padding-top: 18vh;
+}
+.pin-spacer {
+   position: relative !important;
+}
+
+.next-project-wrap {
+   display: flex;
+   justify-content: center;
+   position: relative !important;
+
+   height: 100% !important;
+   max-height: unset !important;
+}
+
+.all-works {
+   top: unset !important;
+   z-index: 111111111;
+   position: relative;
+   margin: 0;
+   transform: unset;
+   display: unset;
+}
+
+.next-project-wrap p {
+   width: unset;
+   height: 32px !important;
+   left: unset;
+   right: unset;
+   padding: 0;
+}
+.next-project-wrap p.left {
+   left: 0;
+   text-align: left;
+
+   opacity: 1;
+   font-weight: 700;
+   font-size: calc(1rem + 1.1vw);
+   letter-spacing: -0.1rem;
+   margin-top: 11px;
+   text-align: center;
+   line-height: 1;
+}
+
+.next-project-wrap p.right {
+   right: 0;
+   text-align: right;
+
+   opacity: 1;
+   font-weight: 300;
+   font-size: calc(1rem + 0.8vw);
+   letter-spacing: -0.1rem;
+   margin-top: 11px;
+   text-align: center;
+   line-height: 1;
+}
+.next-project-wrap p.right a {
+   border-bottom: 1px solid transparent;
+   transition: all 0.2s ease-in-out;
+}
+
+.next-project-wrap p.right a:hover {
+   border-bottom: 1px solid #fff;
 }
