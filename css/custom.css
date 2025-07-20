@@ -3,12 +3,15 @@ header {
    max-width: 100vw;
 }
 .preloader-wrap {
+   height: 100vh;
    max-height: 100vh;
 }
 body {
    overflow-x: hidden;
 }
-
+#main {
+   overflow: hidden;
+}
 a.disabled {
    pointer-events: none !important;
 }

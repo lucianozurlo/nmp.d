@@ -111,7 +111,7 @@
    pointer-events: auto;
    position: absolute;
    top: 50%;
-   width: auto;
+   width: 6vh;
    height: 6vh;
    border: none;
    background: none;
@@ -254,7 +254,7 @@
    }
 
    .splide__slide {
-      width: calc(100% - 80px) !important;
+      width: calc(85% - 80px) !important;
    }
 
    .splide__arrow--prev {
