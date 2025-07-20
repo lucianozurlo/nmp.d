@@ -15,7 +15,9 @@ body {
 a.disabled {
    pointer-events: none !important;
 }
-
+.fw-500 {
+   font-weight: 500;
+}
 .italic {
    font-style: italic;
 }
@@ -742,6 +744,18 @@ i.arrow-icon-down.white {
    .hero-title.double
    > div:first-child {
    margin-bottom: -20px;
+}
+
+#footer-container .button-icon i {
+   width: inherit;
+   height: inherit;
+   line-height: inherit;
+   transform: translateY(-6px);
+}
+
+.mail-txt {
+   font-weight: 700;
+   color: #222;
 }
 
 /********/

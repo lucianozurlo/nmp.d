@@ -127,10 +127,10 @@
 
 /* Estilos para tabletas */
 @media (max-width: 1279px) {
-   .fullscreen-menu .flexnav {
+   /* .fullscreen-menu .flexnav {
       margin-top: 25px !important;
       margin-left: 100px !important;
-   }
+   } */
 
    .fullscreen-menu .flexnav li a {
       font-size: calc(2rem + 3vw) !important;
@@ -286,6 +286,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 20px;
    }
 
    #header-container nav .flexnav .menu-item {
@@ -330,8 +331,15 @@
       justify-content: center;
    }
 
+   #contact {
+      height: 100vh;
+   }
    #contact .inner h2 {
       font-size: calc(0.6rem + 7vw);
+   }
+
+   .mail-txt {
+      margin-top: 0;
    }
 
    .project .project-info h2 {
