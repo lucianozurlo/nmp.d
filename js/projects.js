@@ -13,11 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
          updateOnMove: true,
          speed: 600,
          start: startIndex,
+         breakpoints: {
+            1279: {
+               perPage: 3,
+               focus: 'center',
+               speed: 500,
+            },
+            767: {
+               perPage: 1,
+               focus: 'center',
+               speed: 400,
+            },
+         },
       });
 
-      splide.on('click', (slide) => {
-         splide.go(slide.index);
-      });
+      // Click en cualquier slide lo centra
+      splide.on('click', (slide) => splide.go(slide.index));
 
       splide.mount();
    });

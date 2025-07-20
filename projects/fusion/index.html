@@ -20,6 +20,8 @@
       <link rel="preload" href="../_seq/fusion-loop-massage01.png" as="image" />
       <link rel="preload" href="../_seq/fusion-loop-massage02.png" as="image" />
       <link rel="preload" href="../_seq/fusion-loop-massage03.png" as="image" />
+      <link rel="stylesheet" href="../../css/splide.min.css" />
+      <link rel="stylesheet" href="../../css/projects.css" />
    </head>
 
    <body class="hidden hidden-ball uppercase-titles projects" data-primary-color="#333">
@@ -134,7 +136,62 @@
                   <div id="main" class="project-detail detail-project">
                      <div id="hero" class="has-image autoscroll">
                         <div id="hero-styles">
-                           <div id="hero-caption"></div>
+                           <div id="hero-caption">
+                              <div class="inner title">
+                                 <h1 class="caption-timeline detail">
+                                    <span>Fusion</span>
+                                    <span class="registered">®</span>
+                                 </h1>
+                                 <h5 class="caption-timeline detail from">
+                                    <span data-hover="Fusion - Desc" data-original="Fusion - Desc">
+                                       Massage Gun</span
+                                    >
+                                 </h5>
+                                 <h5 class="caption-timeline detail desc">
+                                    <span>Fusion Black Pro</span>
+                                    <span class="registered">®</span>
+                                 </h5>
+                                 <p class="caption-timeline detail anio">
+                                    <span>2020</span>
+                                 </p>
+                              </div>
+
+                              <div class="inner text">
+                                 <p
+                                    data-hover="Fusion - About Text 1"
+                                    data-original="Fusion - About Text 1"
+                                    class="has-opacity"
+                                 >
+                                    This massage gun was designed for an american company in 2020.
+                                    The aim was to make something different to those rough,
+                                    muscle-design guns seen in the market. Something that reminds
+                                    you to luxury cars, using subtle edges, smooth surface
+                                    transitions and combining different colours and textures.
+                                 </p>
+                                 <p
+                                    data-hover="Fusion - About Text 2"
+                                    data-original="Fusion - About Text 2"
+                                    class="has-opacity"
+                                 >
+                                    Every surface was shaped with care, having a big challenge in
+                                    integrating the top boss that covers the engine seamlessly and
+                                    making something unique in the display design that isn't seen in
+                                    this kind of product which use the typical cheap segments
+                                    displays and just some LEDs to show the remaining battery life.
+                                    It was designed in a way that it looks like an LED display but
+                                    using creativity to keep the costs low.
+                                 </p>
+                                 <p
+                                    data-hover="Fusion - About Text 3"
+                                    data-original="Fusion - About Text 3"
+                                    class="has-opacity"
+                                 >
+                                    The heat output is as well seamlessly integrated, achieving an
+                                    efficient air output without compromising the aesthetics.
+                                 </p>
+                              </div>
+                           </div>
+
                            <div id="hero-description" class="has-image autoscroll">
                               <div class="inner text">
                                  <p
@@ -187,6 +244,7 @@
                                        </svg>
                                     </a>
                                  </div>
+
                                  <div id="caption-img">
                                     <div class="inner title">
                                        <h1 class="caption-timeline detail">
@@ -212,10 +270,7 @@
                                  </div>
                                  <div
                                     id="hero-bg-image"
-                                    style="
-                                       background-image: url(../_intro/fusion-intro-alpha.png);
-                                       background-size: 40vw !important;
-                                    "
+                                    style="background-image: url(../_intro/fusion-intro-alpha.png)"
                                  ></div>
                                  <div class="bg-base"></div>
                               </div>
@@ -541,7 +596,7 @@
                                                 data-hover="Buy me - Text 1"
                                                 data-original="Buy me - Text 1"
                                              >
-                                                We don’t make any revenue for this.</span
+                                                We don't make any revenue for this.</span
                                              ><br />
                                              <span
                                                 data-hover="Buy me - Text 2"
@@ -560,49 +615,132 @@
                   </div>
 
                   <div id="project-nav">
-                     <div class="next-project-wrap bg-no-next">
-                        <p class="all-works">[ Next Project ]</p>
-                        <div class="next-project-caption">
-                           <div class="next-caption-wrapper">
-                              <div class="caption-wrapper">
-                                 <a
-                                    class="next-ajax-link-project auto-trigger"
-                                    data-type="page-transition"
-                                    href="../iqperfetto/"
-                                    data-color="#333"
-                                    data-firstline="Next"
-                                    data-secondline="Project"
-                                 ></a>
-                              </div>
-                           </div>
+                     <div class="next-project-wrap">
+                        <div class="next-project-header">
+                           <p class="all-works left">Other Projects</p>
+                           <p class="all-works right"><a href="../../">View all work</a></p>
                         </div>
-
-                        <div class="next-hero-progress lt"><span></span></div>
-
-                        <div class="next-project-image-wrapper next-white">
+                        <div class="next-project-image-wrapper">
                            <div class="next-project-image project">
-                              <div
-                                 class="next-project-image-bg next-white"
-                                 style="
-                                    background-image: url(../_intro/iqperfetto-intro-alpha.png);
-                                    background-size: 40vw !important;
-                                 "
-                              ></div>
-                              <div class="bg-base next"></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+                              <div class="next-project-image-bg">
+                                 <div id="slider">
+                                    <section
+                                       class="splide"
+                                       aria-label="NMP.D - Other Projects"
+                                       data-start="0"
+                                    >
+                                       <div class="splide__track">
+                                          <ul class="splide__list">
+                                             <!-- <li class="splide__slide">
+                                                <a
+                                                   href="../../projects/fusion/"
+                                                   class="slide-content"
+                                                >
+                                                   <img
+                                                      src="../_intro/fusion-intro-alpha.png"
+                                                      alt=""
+                                                   />
+                                                   <div class="slide-label">Fusion</div>
+                                                </a>
+                                             </li> -->
+                                             <li class="splide__slide">
+                                                <a
+                                                   href="../../projects/iqperfetto/"
+                                                   class="slide-content"
+                                                >
+                                                   <img
+                                                      src="../_intro/iqperfetto-intro-alpha.png"
+                                                      alt=""
+                                                   />
+                                                   <div class="slide-label">IQ Perfetto</div>
+                                                </a>
+                                             </li>
+                                             <li class="splide__slide">
+                                                <a
+                                                   href="../../projects/skinpro/"
+                                                   class="slide-content"
+                                                >
+                                                   <img
+                                                      src="../_intro/skinpro-intro-alpha.png"
+                                                      alt=""
+                                                   />
+                                                   <span class="slide-label"
+                                                      >SkinPro<br />Softshine</span
+                                                   >
+                                                </a>
+                                             </li>
+                                             <li class="splide__slide">
+                                                <a
+                                                   href="../../projects/pilltrack/"
+                                                   class="slide-content"
+                                                >
+                                                   <img
+                                                      src="../_intro/pilltrack-intro-alpha-ns.png"
+                                                      alt=""
+                                                   />
+                                                   <div class="slide-label">Pilltrack</div>
+                                                </a>
+                                             </li>
+                                             <li class="splide__slide">
+                                                <a
+                                                   href="../../projects/ccexquisite/"
+                                                   class="slide-content"
+                                                >
+                                                   <img
+                                                      src="../_intro/ccexquisite-intro-alpha.png"
+                                                      alt=""
+                                                   />
+                                                   <div class="slide-label">CC Exquisite</div>
+                                                </a>
+                                             </li>
+                                             <li class="splide__slide">
+                                                <a
+                                                   href="../../projects/kali/"
+                                                   class="slide-content"
+                                                >
+                                                   <img
+                                                      src="../_intro/kali-intro-alpha.png"
+                                                      alt=""
+                                                   />
+                                                   <div class="slide-label">Kali</div>
+                                                </a>
+                                             </li>
+                                             <li class="splide__slide">
+                                                <a
+                                                   href="../../projects/wellted/"
+                                                   class="slide-content"
+                                                >
+                                                   <img
+                                                      src="../_intro/wellted-intro-alpha.png"
+                                                      alt=""
+                                                   />
+                                                   <div class="slide-label">Wellted</div>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
 
-                  <div id="project-nav-responsive">
-                     <div class="next-project-wrap bg-no-next">
-                        <p class="all-works">[ Next Project ]</p>
-
-                        <div class="next-project-image-wrapper next-white">
-                           <div class="next-project-image">
-                              <a href="../iqperfetto/">
-                                 <img src="../_intro/iqperfetto-intro-alpha.png" alt="" />
-                              </a>
+                                       <div class="splide__arrows">
+                                          <button
+                                             class="splide__arrow splide__arrow--prev"
+                                             aria-label="Anterior"
+                                          >
+                                             <svg viewBox="0 0 24 24" preserveAspectRatio="none">
+                                                <polyline points="15 3 6 12 15 21"></polyline>
+                                             </svg>
+                                          </button>
+                                          <button
+                                             class="splide__arrow splide__arrow--next"
+                                             aria-label="Siguiente"
+                                          >
+                                             <svg viewBox="0 0 24 24" preserveAspectRatio="none">
+                                                <polyline points="9 3 18 12 9 21"></polyline>
+                                             </svg>
+                                          </button>
+                                       </div>
+                                    </section>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -637,6 +775,8 @@
       <script src="../../js/video-scroll.js"></script>
       <script src="../../js/videos-alpha.js"></script>
       <script src="../../js/spots.js"></script>
-      <script src="../../js/nextheader.js"></script>
+
+      <script src="../../js/splide.min.js"></script>
+      <script src="../../js/projects.js"></script>
    </body>
 </html>

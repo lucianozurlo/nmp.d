@@ -2,7 +2,9 @@
 header {
    max-width: 100vw;
 }
-
+.preloader-wrap {
+   max-height: 100vh;
+}
 body {
    overflow-x: hidden;
 }
@@ -506,8 +508,9 @@ i.arrow-icon-down.white {
    margin: 0;
    display: flex;
    justify-content: flex-start;
+   justify-content: center; /* centrado */
    flex-direction: column;
-   top: 10vh;
+   /* top: 10vh; centrado */
    /* position: -webkit-sticky;
    position: sticky;
    max-height: 100vh;
@@ -522,6 +525,11 @@ i.arrow-icon-down.white {
    height: 100vh;
    position: absolute;
    z-index: 111111;
+}
+
+#hero-description,
+#caption-img {
+   display: none !important;
 }
 
 #main.project-detail.detail-project #hero.has-image #caption-img .inner.title {
@@ -573,7 +581,8 @@ i.arrow-icon-down.white {
 #main.project-detail.detail-project #hero.has-image #caption-img .inner .detail,
 #main.project-detail.detail-project #hero.has-image #hero-caption .inner .detail {
    text-align: left;
-   margin: 20vh 0 0 0;
+   margin: 10vh 0 0 0; /* centrado */
+   margin: 0;
    line-height: 1;
    letter-spacing: -0.6vw;
 }
@@ -599,7 +608,7 @@ i.arrow-icon-down.white {
 
 #main.project-detail.detail-project #hero.has-image #caption-img .inner h1.less,
 #main.project-detail.detail-project #hero.has-image #hero-caption .inner h1.less {
-   margin-top: 13vh;
+   /*margin-top: 13vh;  centrado */
    font-size: 9.5vw;
    margin-left: -0.7vw !important;
 }
@@ -1129,12 +1138,12 @@ video {
    color: #fff;
 }
 
-#project-nav-responsive,
+/* #project-nav-responsive,
 #project-nav-responsive .next-project-image-wrapper,
 #project-nav-responsive .next-project-image-wrapper .next-project-image-bg,
 #project-nav-responsive .next-project-image-wrapper.temporary {
    display: none !important;
-}
+} */
 
 .light-content #project-nav .all-works,
 .light-content #project-nav .all-works .link-text {
@@ -2456,46 +2465,28 @@ transform: translate(10%, -25%)
 #page-content.iqperfetto
    #main.project-detail.detail-project
    #hero.has-image
-   #caption-img
+   #hero-caption
    .inner
    h1.less,
 #page-content.skinpro
    #main.project-detail.detail-project
    #hero.has-image
-   #caption-img
+   #hero-caption
    .inner
    h1.less,
 #page-content.ccexquisite
    #main.project-detail.detail-project
    #hero.has-image
-   #caption-img
+   #hero-caption
    .inner
    h1.less {
    display: flex;
    flex-direction: column;
 }
 
-#page-content.iqperfetto
-   #main.project-detail.detail-project
-   #hero.has-image
-   #caption-img
-   .inner
-   .detail
-   div:nth-child(2),
-#page-content.skinpro
-   #main.project-detail.detail-project
-   #hero.has-image
-   #caption-img
-   .inner
-   .detail
-   div:nth-child(2),
-#page-content.ccexquisite
-   #main.project-detail.detail-project
-   #hero.has-image
-   #caption-img
-   .inner
-   .detail
-   div:nth-child(2) {
+#page-content.iqperfetto #hero-caption .inner .detail div:nth-child(2),
+#page-content.skinpro #hero-caption .inner .detail div:nth-child(2),
+#page-content.ccexquisite #hero-caption .inner .detail div:nth-child(2) {
    display: flex;
    flex-direction: row;
 }
