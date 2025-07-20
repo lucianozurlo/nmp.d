@@ -12,6 +12,9 @@ body {
 #main {
    overflow: hidden;
 }
+.mb-40 {
+   margin-bottom: 40px;
+}
 a.disabled {
    pointer-events: none !important;
 }

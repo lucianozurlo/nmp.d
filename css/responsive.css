@@ -252,6 +252,9 @@
 
 /* Estilos para celulares */
 @media (max-width: 767px) {
+   .mob-mb-40 {
+      margin-bottom: 40px;
+   }
    .preloader-intro span {
       font-size: calc(2rem + 2vw);
       line-height: calc(2rem + 2.5vw);
@@ -986,5 +989,9 @@
 
    .wellted-exploded {
       margin-top: 0;
+   }
+
+   .skinpro-buy-me {
+      position: relative;
    }
 }
