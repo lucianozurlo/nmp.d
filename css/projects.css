@@ -94,7 +94,7 @@
 .splide__slide.is-active .slide-label {
    opacity: 1;
    font-weight: 500;
-   font-size: calc(1rem + 0.8vw);
+   font-size: calc(1.2rem + 0.8vw);
    letter-spacing: -0.1rem;
    margin-top: 11px;
    text-align: center;
@@ -245,4 +245,26 @@
 
 .next-project-wrap p.right a:hover {
    border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 767px) {
+   .splide,
+   .splide__track {
+      width: 100%;
+   }
+
+   .splide__slide {
+      width: calc(100% - 80px) !important;
+   }
+
+   .splide__arrow--prev {
+      left: 20px;
+   }
+
+   .splide__arrow--next {
+      right: 20px;
+   }
+   .splide__slide.is-active .slide-label {
+      font-size: calc(1.4rem + 0.8vw);
+   }
 }
