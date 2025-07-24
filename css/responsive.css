@@ -818,7 +818,9 @@
    .skinpro-colors {
       margin-top: 0;
    }
-
+   .skinpro-colors.full.xlarge .one_full .content-full {
+      flex-direction: column;
+   }
    .skinpro-colors.full.xlarge .one_full .content-full.fullwide img {
       max-width: 100%;
    }
