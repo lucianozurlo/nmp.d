@@ -895,7 +895,10 @@
    #main.project-detail .pilltrack-uses .content-half > img {
       max-height: unset !important;
    }
-
+   .pilltrack-buy-me .buy-me {
+      position: relative;
+      margin-top: 30px;
+   }
    .pilltrack-buy-me .buy-me-content img {
       margin-bottom: 20%;
    }
