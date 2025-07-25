@@ -818,9 +818,7 @@
    .skinpro-colors {
       margin-top: 0;
    }
-   .skinpro-colors.full.xlarge .one_full .content-full {
-      flex-direction: column;
-   }
+
    .skinpro-colors.full.xlarge .one_full .content-full.fullwide img {
       max-width: 100%;
    }
@@ -897,6 +895,11 @@
    #main.project-detail .pilltrack-uses .content-half > img {
       max-height: unset !important;
    }
+
+   .pilltrack .full.xlarge .one_full .content-full {
+      flex-direction: column;
+   }
+
    .pilltrack-buy-me .buy-me {
       position: relative;
       margin-top: 30px;
