@@ -28,6 +28,8 @@
 .splide__slide {
    display: flex;
    justify-content: center;
+   cursor: -webkit-grab;
+   cursor: grab;
 }
 
 .slide-content {
