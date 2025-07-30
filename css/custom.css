@@ -2622,6 +2622,8 @@ background-color: #eaeaea;
    z-index: 1;
    height: calc(80vh - 100px);
    max-height: calc(80vh - 100px);
+   width: calc(80vw - 100px);
+   max-width: calc(80vw - 100px);
    padding-top: calc(20vh - 50px);
    /* clip-path: inset(10px 15px 20px 5px); */
    -webkit-clip-path: inset(1px);
