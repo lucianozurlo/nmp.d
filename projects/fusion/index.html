@@ -521,7 +521,7 @@
                                  <div class="content-full">
                                     <div class="content-videos">
                                        <div class="wrapper-videos">
-                                          <video
+                                          <!-- <video
                                              class="video-scroll"
                                              src="../_vid/fusion-loop-massage.mp4"
                                              autoplay
@@ -529,7 +529,14 @@
                                              muted
                                              preload
                                              playsinline
-                                          ></video>
+                                          ></video> -->
+                                          <div class="wrapper-videos" id="fusion-loop-massage">
+                                             <img
+                                                class="frame-seq"
+                                                src=""
+                                                alt="fusion-loop-massage"
+                                             />
+                                          </div>
                                        </div>
                                     </div>
                                  </div>
@@ -778,5 +785,51 @@
 
       <script src="../../js/splide.min.js"></script>
       <script src="../../js/projects.js"></script>
+
+      <script>
+         // Configuración de las secuencias
+         const sequences = [
+            {
+               id: 'fusion-loop-massage',
+               baseName: 'fusion-loop-massage',
+               totalFrames: 3,
+               frameRate: 30,
+            },
+         ];
+
+         function getFrameSrc(baseName, frame) {
+            return `../_seq/${baseName}${String(frame).padStart(2, '0')}.png`;
+         }
+
+         sequences.forEach(({ id, baseName, totalFrames, frameRate }) => {
+            const container = document.getElementById(id);
+            const frameElement = container.querySelector('.frame-seq');
+            let currentFrame = 1;
+
+            const images = [];
+            let loadedCount = 0;
+
+            for (let i = 1; i <= totalFrames; i++) {
+               const img = new Image();
+               img.src = getFrameSrc(baseName, i);
+               img.onload = () => {
+                  loadedCount++;
+                  if (loadedCount === totalFrames) {
+                     // Todas las imágenes precargadas
+                     // Establecer el primer frame antes de iniciar el intervalo
+                     frameElement.src = getFrameSrc(baseName, 1);
+                     frameElement.style.display = 'block';
+
+                     setInterval(() => {
+                        currentFrame = currentFrame < totalFrames ? currentFrame + 1 : 1;
+                        frameElement.src = getFrameSrc(baseName, currentFrame);
+                     }, 1000 / frameRate);
+                  }
+               };
+               img.onerror = () => console.error(`Error al cargar: ${img.src}`);
+               images.push(img);
+            }
+         });
+      </script>
    </body>
 </html>

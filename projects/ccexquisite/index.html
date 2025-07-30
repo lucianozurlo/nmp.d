@@ -292,7 +292,7 @@
                                  <div class="content-full d-flex-center">
                                     <div class="content-videos">
                                        <div class="wrapper-videos">
-                                          <video
+                                          <!-- <video
                                              class="video-scroll"
                                              src="../_vid/ccexquisite-loop-color.mp4"
                                              autoplay
@@ -300,7 +300,13 @@
                                              muted
                                              preload
                                              playsinline
-                                          ></video>
+                                          ></video> -->
+                                          <video autoplay muted loop playsinline>
+                                             <source
+                                                src="../_vid/ccexquisite-loop-color.mp4"
+                                                type="video/mp4"
+                                             />
+                                          </video>
                                        </div>
                                     </div>
                                  </div>
@@ -588,5 +594,32 @@
 
       <script src="../../js/splide.min.js"></script>
       <script src="../../js/projects.js"></script>
+
+      <script>
+         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+         // Detección iOS
+         const esIOS = /iPhone|iPad|iPod/.test(userAgent);
+
+         // Detección Safari (excluyendo Chrome/Chromium/Firefox)
+         // Comprobamos que contenga "Safari" y no "Chrome", "CriOS" (Chrome iOS) o "Firefox"
+         const esSafari =
+            userAgent.includes('Safari') &&
+            !userAgent.includes('Chrome') &&
+            !userAgent.includes('CriOS') &&
+            !userAgent.includes('FxiOS') && // Firefox iOS
+            !userAgent.includes('Edg'); // Edge (por si acaso)
+
+         const lightVideos = document.querySelectorAll('.lightBg');
+
+         // Aplica el estilo a cada elemento según el resultado
+         lightVideos.forEach((div) => {
+            if (esIOS) {
+               div.classList.add('ios');
+            } else if (esSafari) {
+               div.classList.add('safari');
+            }
+         });
+      </script>
    </body>
 </html>
