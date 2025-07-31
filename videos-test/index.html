@@ -9,7 +9,7 @@
          }
 
          .content-videos {
-            padding: 0;
+            padding: 300px 0;
             width: 100%;
             height: 100%;
             max-width: 100%;
@@ -38,6 +38,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 100%;
          }
 
          .wrapper-videos::before {
@@ -103,20 +104,20 @@
             border-radius: 20px;
          }
 
-         .wrapper-videos video {
+         .wrapper-videos * {
             border-radius: 20px;
             display: block;
             position: relative;
             z-index: 1;
-            max-height: 100%;
-            max-width: 100%;
+            max-height: 50%;
+            max-width: 50%;
             /* clip-path: inset(10px 15px 20px 5px); */
             clip-path: inset(1px);
          }
 
          .frame-seq {
-            max-height: 100%;
-            max-width: 100%;
+            /* max-height: 50%;
+            max-width: 50%; */
             object-fit: contain;
          }
       </style>
@@ -144,7 +145,7 @@
       </div>
       <div class="content-videos">
          <div id="wellted-selfcleaning" class="wrapper-videos">
-            <video class="video-scroll" autoplay loop muted preload playsinline>
+            <video class="video-scroll" autoplay muted preload playsinline>
                <source src="../projects/_vid/wellted-scroll-selfcleaning.mp4" type="video/mp4" />
             </video>
          </div>
